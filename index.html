@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bennett University Admissions 2026-27</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bennett-blue': '#0059a4',
+                        'bennett-red': '#e01e36',
+                        'bennett-dark-blue': '#003a6d',
+                        'card-gray': '#f4f4f4',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            /* Lighter background for the rest of the page */
+        }
+
+        /* Hero Section Background */
+        main.hero-section {
+            position: relative;
+        }
+
+        main.hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background-image: url('https://image-static.collegedunia.com/public/college_data/images/campusimage/1500889309u7t9yolfg.JPG');
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            /* Tone down opacity so text is readable */
+        }
+
+        .main-overlay {
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .ug-pg-text {
+            line-height: 0.9;
+        }
+
+        .ampersand-circle {
+            background: #000;
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .discipline-bar {
+            border-right: 2px solid #0059a4;
+            padding-right: 12px;
+            margin-right: 12px;
+        }
+
+        .discipline-bar:last-child {
+            border-right: none;
+        }
+
+        .card-header-tab {
+            background: #fff;
+            color: #0059a4;
+            padding: 4px 20px;
+            border-radius: 4px 4px 0 0;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Custom Scrollbar for Programs Section */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #0059a4;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #003a6d;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    <!-- Content Area -->
+    <main class="hero-section flex-grow flex flex-col justify-center relative min-h-[100vh]">
+        <!-- Header Logos -->
+    <header class="flex flex-wrap items-center gap-8 mb-12">
+        <img src="https://cdn.npfs.co/uploads/template/257/6227/publish/images/group-6.png?1771500681"
+            alt="Bennett University" class="h-16 md:h-20">
+        <img src="https://cdn.npfs.co/uploads/template/257/6227/publish/images/grade-a.png?1771500681"
+            alt="NAAC Grade A+" class="h-16 md:h-20">
+    </header>
+
+        <!-- Large Text -->
+        <div class="max-w-4xl ml-4 md:ml-20">
+            <h1 class="font-extrabold text-bennett-blue ug-pg-text">
+                <span class="text-[80px] md:text-[180px]">B.Tech</span>
+                <!-- <span class="ampersand-circle text-[30px] md:text-[50px] leading-none">&amp;</span> -->
+                <!-- <span class="text-[80px] md:text-[180px]">PG</span> -->
+            </h1>
+            <h2 class="text-4xl md:text-7xl font-bold text-gray-800 mt-2 mb-8">
+                ADMISSIONS OPEN 2026
+            </h2>
+
+            <!-- Disciplines -->
+            <div
+                class="flex flex-wrap text-gray-800 font-bold text-sm md:text-xl tracking-tight leading-relaxed max-w-5xl uppercase">
+                <span class="discipline-bar">Artificial Intelligence</span>
+                <span class="discipline-bar">Engineering</span>
+                <span class="discipline-bar">Applied Sciences</span>
+                <span class="discipline-bar">Liberal Arts</span>
+                <span class="discipline-bar">Law</span>
+                <span class="discipline-bar">Media</span>
+                <span class="discipline-bar">Design</span>
+                <span class="discipline-bar">Management</span>
+                <span>Global Pathways</span>
+            </div>
+        </div>
+
+        <!-- Login Card (Positioned bottom right on desktop) -->
+        <!-- <div class="mt-12 lg:mt-0 lg:absolute lg:bottom-0 lg:right-0 w-full max-w-sm">
+            <div class="bg-bennett-blue rounded-sm overflow-hidden shadow-2xl">
+
+                
+                <div class="pt-4 flex justify-center">
+                    <div class="card-header-tab">Apply Now</div>
+                </div>
+
+               
+                <div class="bg-white p-6 m-[2px] rounded-b-sm">
+                    <form id="loginForm" class="space-y-4">
+                        <div class="relative">
+                            <input type="email" id="email" required
+                                class="w-full border border-gray-300 p-2 text-sm focus:outline-none focus:border-bennett-blue"
+                                placeholder="Your Email *">
+                        </div>
+                        <div class="relative">
+                            <input type="password" id="password" required
+                                class="w-full border border-gray-300 p-2 text-sm focus:outline-none focus:border-bennett-blue"
+                                placeholder="Your Password *">
+                        </div>
+
+                       
+                        <div class="text-right">
+                            <a href="#" class="text-bennett-blue text-xs font-semibold">Login via OTP</a>
+                        </div>
+
+                       
+                        <div class="flex items-start gap-2">
+                            <input type="checkbox" id="remember" class="mt-1">
+                            <label for="remember" class="text-[10px] text-gray-600 leading-tight">
+                                Check to remember your login details
+                            </label>
+                        </div>
+
+                      
+                        <button type="submit"
+                            class="w-full bg-bennett-red text-white font-bold py-2 rounded shadow-md hover:bg-red-700 transition uppercase text-sm">
+                            LOGIN
+                        </button>
+
+                        <div class="text-center">
+                            <a href="#" class="text-bennett-blue text-xs font-semibold decoration-bennett-blue">Forgot
+                                Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+    </main>
+
+    <!-- Why Bennett University Section -->
+    <section class="bg-white w-full shadow-2xl rounded-sm overflow-hidden z-10 relative">
+        <!-- Top Announcement Bar -->
+        <div
+            class="bg-[#f4f4f4] py-2 px-4 text-xs md:text-sm flex justify-between items-center overflow-hidden w-full z-20">
+            <div class="flex items-center flex-1 overflow-hidden pr-4">
+                <span class="text-bennett-red font-bold uppercase shrink-0 z-10 bg-[#f4f4f4] pr-2">Announcement</span>
+                <marquee class="text-gray-800 font-medium flex-1" scrollamount="5">for Up to 100% Scholarship.</marquee>
+            </div>
+            <a href="#"
+                class="bg-bennett-red text-white font-bold px-3 py-1 rounded text-xs hover:bg-red-700 transition shrink-0 z-10">Apply
+                Now</a>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-bennett-blue text-center uppercase mb-8 md:mb-10">Why
+                Bennett University</h2>
+
+            <div
+                class="flex flex-wrap justify-center items-stretch divide-y md:divide-y-0 md:divide-x divide-gray-300 ">
+                <!-- Stat 1 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-bennett-dark-blue tracking-tight">₹1.37</div>
+                    <div class="text-xl md:text-2xl font-extrabold text-bennett-dark-blue leading-tight mb-2">CR. PA
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium text-center">Highest Package</div>
+                </div>
+
+                <!-- Stat 2 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-bennett-dark-blue tracking-tight mb-2">186+
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">years
+                        of<br>Times Group<br>Legacy</div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-bennett-dark-blue tracking-tight mb-2">120+
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">
+                        International<br>Collaborations</div>
+                </div>
+
+                <!-- Stat 4 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-bennett-dark-blue tracking-tight mb-2">70+
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">
+                        Startups<br>Launched</div>
+                </div>
+
+                <!-- Stat 5 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-bennett-dark-blue tracking-tight mb-2">1200+
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">Companies
+                        for<br>Placement</div>
+                </div>
+
+                <!-- Stat 6 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-bennett-dark-blue tracking-tight mb-2">10+
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">Days
+                        Global<br>Immersion Program<br>Across 5 Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 50+ Programs Section -->
+    <section class="w-full relative py-12 md:py-16 bg-[#ebf0f9] overflow-hidden shadow-inner">
+        <!-- Background Right Image Placeholder (the office/girl background) -->
+        <div class="absolute inset-y-0 right-0 w-full md:w-1/2 z-0 hidden md:block">
+            <div class="w-full h-full bg-cover bg-center"
+                style="background-image: url('https://static.npfs.co/accounts/257/documents/2026/2/16/0fe1257dcb754d15804c8615f2441f56_50_Programs_BG.jpg'); background-position: center right; opacity: 0.9;">
+            </div>
+            <!-- Gradient overlay to blend left and right -->
+            <div class="absolute inset-0 bg-gradient-to-r from-[#ebf0f9] via-[#ebf0f9]/10 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-8">
+
+            <!-- Left Side Area -->
+            <div class="w-full md:w-3/5 lg:w-[55%]">
+                <h2 class="text-3xl md:text-3xl font-extrabold text-bennett-blue uppercase mb-6 drop-shadow-sm ml-2">50+
+                    Programs</h2>
+
+                <!-- Card Container -->
+                <div
+                    class="bg-white rounded-[16px] shadow-2xl flex flex-col md:flex-row overflow-hidden border border-gray-100 h-[500px]">
+
+                    <!-- Sidebar (Schools) -->
+                    <div id="school-sidebar"
+                        class="w-full md:w-2/5 bg-white overflow-y-auto border-r border-gray-200 p-2 space-y-1 custom-scrollbar">
+                        <div data-school="ai"
+                            class="school-tab bg-bennett-blue text-white text-xs md:text-sm font-medium p-3 rounded cursor-pointer transition">
+                            School of Artificial Intelligence</div>
+                        <div data-school="cset"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            School of Computer Science Engineering & Technology</div>
+                        <div data-school="se"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            School of Engineering & Applied Science</div>
+                        <div data-school="sm"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            School of Management</div>
+                        <div data-school="sl"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            School of Law</div>
+                        <div data-school="sd"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            School of Design</div>
+                        <div data-school="sla"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            School of Liberal Arts</div>
+                        <div data-school="tsm"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            Times School of Media</div>
+                        <div data-school="sgp"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            School of Global Pathways</div>
+                        <div data-school="iip"
+                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
+                            Industry Integrated Programs</div>
+                    </div>
+
+                    <!-- Main Content (Programs) -->
+                    <div id="programs-content"
+                        class="w-full md:w-3/5 bg-[#f8f9fc] p-6 lg:p-8 overflow-y-auto custom-scrollbar relative">
+                        <h3
+                            class="text-lg md:text-xl font-bold text-bennett-blue mb-4 pb-2 border-b-2 border-bennett-blue inline-block">
+                            School of Artificial Intelligence</h3>
+
+                        <div class="mt-2 space-y-6">
+                            <!-- Category 1 -->
+                            <div>
+                                <h4 class="text-sm font-extrabold text-gray-800 mb-3">Undergraduate Programs</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> B.Tech
+                                        (Artificial Intelligence)
+                                    </li>
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> B.Sc.
+                                        (Artificial Intelligence)
+                                    </li>
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> BCA
+                                        (Artificial Intelligence)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Category 2 -->
+                            <div>
+                                <h4 class="text-sm font-extrabold text-gray-800 mb-3">Postgraduate Programs</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> M.Tech
+                                        (Artificial Intelligence)
+                                    </li>
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> M.Sc.
+                                        (Artificial Intelligence)
+                                    </li>
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> MCA
+                                        (Artificial Intelligence)
+                                    </li>
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> M.Tech
+                                        (Artificial Intelligence) + PhD
+                                    </li>
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> PG
+                                        Diploma AI in Healthcare <br> (in collaboration with MAX Healthcare)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Category 3 -->
+                            <div>
+                                <h4 class="text-sm font-extrabold text-gray-800 mb-3">Doctoral Program</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> Ph.D.
+                                        (Doctor of Philosophy)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image Area for Mobile/Hidden on Desktop -->
+            <!-- Note: Modify the img src below if you have the local 'girl' image asset to show exactly as the screenshot. -->
+            <div class="hidden md:flex w-full md:w-2/5 lg:w-[45%] justify-end items-end h-[500px] overflow-hidden">
+                <img src="https://cdn.npfs.co/uploads/template/257/6227/publish/images/Student_Image.png"
+                    class="max-h-[550px] object-contain z-10 drop-shadow-2xl translate-y-6" alt="Student">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Excellence in Every Stat Section -->
+    <section class="bg-[#ebf0f9] w-full py-12 md:py-16 mt-4">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-bennett-blue text-center uppercase mb-10">Excellence in
+                Every Stat</h2>
+
+            <div class="flex flex-col gap-6 w-full max-w-[950px] mx-auto">
+                <!-- Top Row: 5 Cards -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                    <!-- Stat 1 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">68</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">
+                            Acres<br>Futuristic<br>Campus</div>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">14,000+</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">Students
+                        </div>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">10,000</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">
+                            Hostel<br>Capacity</div>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">16+</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">
+                            Sports<br>Facilities</div>
+                    </div>
+                    <!-- Stat 5 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">90%+</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">Ph.D.
+                            Faculty</div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row: 4 Cards -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 max-w-[800px] mx-auto w-full">
+                    <!-- Stat 6 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-2xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight text-center">
+                            50+<br><span
+                                class="text-[12px] md:text-sm text-gray-600 font-medium tracking-normal leading-tight">UG,
+                                PG & Ph.D.<br>Programs</span></div>
+                    </div>
+                    <!-- Stat 7 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight text-center">
+                            20+<br><span
+                                class="text-[12px] md:text-sm text-gray-600 font-medium tracking-normal leading-tight">Corporate<br>Collaborations</span>
+                        </div>
+                    </div>
+                    <!-- Stat 8 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div
+                            class="flex items-center text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">
+                            ₹125<br>Cr+</div>
+                        <div class="text-[12px] md:text-sm text-gray-600 font-medium text-center leading-tight">Funds
+                            Raised<br>by Startups</div>
+                    </div>
+                    <!-- Stat 9 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">40+</div>
+                        <div class="text-[12px] md:text-sm text-gray-600 font-medium text-center leading-tight">
+                            Student-Led<br>Clubs &<br>Societies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Pathways Program Section -->
+    <section class="w-full bg-white py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-stretch gap-12 lg:gap-20">
+
+            <!-- Left Side Text & Icons -->
+            <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <h2
+                    class="text-3xl md:text-[40px] font-extrabold text-bennett-blue uppercase leading-[1.1] mb-2 tracking-tight">
+                    GLOBAL PATHWAYS</h2>
+                <h3 class="text-2xl md:text-3xl font-extrabold text-black uppercase tracking-widest mb-6">PROGRAM</h3>
+
+                <div class="border-t border-[#e5eaff] pt-6 mb-8 relative">
+                    <!-- Faint blue decorative line at top edge -->
+                    <div class="absolute top-[-2px] left-0 w-24 h-[3px] bg-bennett-blue opacity-20"></div>
+                    <p class="text-gray-600 font-medium text-sm md:text-base leading-relaxed">
+                        Start in India at Bennett University, Finish at a Renowned University Abroad
+                    </p>
+                </div>
+
+                <!-- 3 Icons Horizontal -->
+                <div class="flex flex-wrap items-start gap-4 md:gap-8 mt-4">
+                    <!-- Icon 1 -->
+                    <div class="flex flex-col items-center flex-1 min-w-[100px] text-center">
+                        <div
+                            class="w-14 h-14 md:w-16 md:h-16 rounded-full border border-blue-100 bg-white flex items-center justify-center mb-3 shadow-md text-bennett-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-9 md:h-9" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 3h7v7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 14L21 3" />
+                            </svg>
+                        </div>
+                        <span
+                            class="text-[11px] md:text-xs text-gray-800 font-medium leading-tight">International<br>Experience</span>
+                    </div>
+
+                    <!-- Icon 2 -->
+                    <div class="flex flex-col items-center flex-1 min-w-[100px] text-center">
+                        <div
+                            class="w-14 h-14 md:w-16 md:h-16 rounded-full border border-blue-100 bg-white flex items-center justify-center mb-3 shadow-md text-bennett-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-9 md:h-9" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 3v2a2 2 0 01-2 2H9" />
+                            </svg>
+                        </div>
+                        <span class="text-[11px] md:text-xs text-gray-800 font-medium leading-tight">Cost
+                            Effective<br>Transition</span>
+                    </div>
+
+                    <!-- Icon 3 -->
+                    <div class="flex flex-col items-center flex-1 min-w-[100px] text-center">
+                        <div
+                            class="w-14 h-14 md:w-16 md:h-16 rounded-full border border-blue-100 bg-white flex items-center justify-center mb-3 shadow-md text-bennett-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-9 md:h-9" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
+                            </svg>
+                        </div>
+                        <span class="text-[11px] md:text-xs text-gray-800 font-medium leading-tight">Global
+                            Work<br>Experience</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Side Universites Box -->
+            <div class="w-full md:w-1/2 flex justify-center lg:justify-end mt-12 md:mt-0 relative">
+                <div
+                    class="bg-[#f7f7f7] rounded-[24px] w-full max-w-[500px] p-8 md:p-10 pt-16 relative flex flex-col items-center justify-center min-h-[300px] shadow-sm">
+
+                    <!-- Floating Tag -->
+                    <div
+                        class="absolute -top-5 bg-bennett-blue text-white font-bold text-sm md:text-base px-8 py-2.5 rounded shadow-md uppercase tracking-wide border-2 border-white">
+                        Partner Universities
+                    </div>
+
+                    <!-- Logos Grid -->
+                    <div class="w-full h-full flex flex-col justify-center gap-10">
+                        <!-- Row 1 -->
+                        <div class="flex justify-around items-center w-full">
+                            <!-- Iowa State -->
+                            <div class="flex flex-col items-center">
+                                <span
+                                    class="font-serif font-black text-[#c8102e] text-[20px] leading-none tracking-tight">IOWA
+                                    STATE</span>
+                                <span
+                                    class="font-serif font-medium text-[#c8102e] text-[18px] leading-none mt-1">UNIVERSITY</span>
+                            </div>
+                            <!-- Kent State -->
+                            <div class="flex flex-col items-center">
+                                <span class="font-serif font-bold text-[#eaab00] text-[22px] leading-none tracking-wide"
+                                    style="color:#002664; text-shadow: 1px 1px 0px #eaab00;">KENT STATE</span>
+                                <span
+                                    class="font-serif font-bold text-[#002664] text-[11px] uppercase tracking-widest mt-1">University</span>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="flex justify-around items-center w-full">
+                            <!-- Univ of Essex -->
+                            <div class="flex items-center gap-2">
+                                <div class="flex flex-wrap w-[18px] gap-[2px]">
+                                    <div class="w-[7px] h-[7px] bg-black"></div>
+                                    <div class="w-[7px] h-[7px] bg-black"></div>
+                                    <div class="w-[7px] h-[7px] bg-black"></div>
+                                    <div class="w-[7px] h-[7px] bg-white"></div>
+                                    <div class="w-[7px] h-[7px] bg-black"></div>
+                                    <div class="w-[7px] h-[7px] bg-black"></div>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <span
+                                        class="font-sans font-medium text-[10px] uppercase leading-none text-black">University</span>
+                                    <span class="font-sans font-medium text-sm leading-none text-black mt-[2px]">of
+                                        Essex</span>
+                                </div>
+                            </div>
+                            <!-- Univ of Birmingham -->
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="w-7 h-8 bg-[#b22222] rounded-b-md flex items-center justify-center text-[10px] font-bold text-[#ffd700] overflow-hidden border border-[#ffd700]">
+                                    ★
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <span
+                                        class="font-serif font-medium text-[9px] uppercase leading-none text-black tracking-widest">University
+                                        OF</span>
+                                    <span
+                                        class="font-serif font-bold text-[13px] leading-none text-black mt-[2px]">BIRMINGHAM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="flex justify-center items-center w-full">
+                            <!-- Univ of Reading -->
+                            <div class="flex items-center gap-2">
+                                <div class="w-7 h-8 bg-[#e31837] flex flex-col border border-yellow-400 rounded-b-sm">
+                                    <div class="h-1/2 flex justify-around items-center px-1 text-[7px] text-yellow-400">
+                                        •••</div>
+                                    <div
+                                        class="h-1/2 bg-[#002f6c] border-t border-yellow-400 flex justify-center items-center text-[11px] font-serif text-white">
+                                        R</div>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <span class="font-sans font-medium text-[11px] leading-none text-black">University
+                                        of</span>
+                                    <span
+                                        class="font-sans font-bold text-base leading-none text-black tracking-wide mt-[2px]">Reading</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BU Placements Section -->
+    <section class="w-full bg-white pb-16 md:pb-24 pt-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2
+                class="text-3xl md:text-4xl font-extrabold text-bennett-blue text-center uppercase mb-12 tracking-tight">
+                BU PLACEMENTS</h2>
+
+            <!-- Carousel Card Container -->
+            <div id="placements-carousel-container"
+                class="bg-[#f0f3fd] rounded-xl max-w-[950px] mx-auto flex flex-col md:flex-row relative overflow-hidden shadow-sm transition-opacity duration-300">
+
+                <!-- Background Decorative Pattern Line inside Card -->
+                <div class="absolute inset-0 z-0 pointer-events-none opacity-20 hidden md:block"
+                    style="background-image: radial-gradient(circle at 15% 50%, transparent 40%, rgba(0, 89, 164, 0.1) 40%, rgba(0, 89, 164, 0.1) 41%, transparent 41%, transparent); background-size: 80% 120%; background-position: -20% center; background-repeat: no-repeat;">
+                </div>
+
+                <!-- Left Student Image Area -->
+                <div
+                    class="w-full md:w-[45%] h-[350px] md:h-[450px] relative z-10 flex items-end justify-center overflow-hidden bg-gradient-to-t from-[#f0f3fd] to-transparent">
+                    <!-- Decorative swooshes -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-60">
+                        <svg class="w-[120%] h-[120%] text-bennett-blue transform -translate-x-4 -translate-y-4"
+                            viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1">
+                            <path stroke-linecap="round" d="M140 50 Q 160 80 150 120" />
+                            <path stroke-linecap="round" d="M165 90 Q 175 110 160 130" />
+                            <path stroke-linecap="round" d="M40 70 Q 20 90 30 130" />
+                            <path stroke-linecap="round" d="M25 150 Q 30 160 40 165" />
+                        </svg>
+                    </div>
+                    <!-- Student Image -->
+                    <img id="placement-student-image"
+                        src="https://cdn.npfs.co/uploads/template/257/6227/publish/images/Student_Image.png"
+                        alt="Student" class="max-h-full object-contain relative z-20"
+                        style="filter: brightness(0.95); transform: scale(1.1) translateY(10px);">
+                </div>
+
+                <!-- Right Text Content Area -->
+                <div
+                    class="w-full md:w-[55%] p-8 py-10 md:py-16 md:pl-8 md:pr-12 relative z-10 flex flex-col justify-center">
+
+                    <h3 id="placement-quote"
+                        class="text-[26px] md:text-3xl lg:text-[34px] font-extrabold text-[#003a6d] leading-[1.2] mb-8 tracking-tight">
+                        "Lift your career <br class="hidden md:block">beyond expectations"
+                    </h3>
+
+                    <div class="mb-4">
+                        <div id="placement-name" class="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+                            Shambhavi Singh</div>
+                        <div id="placement-course"
+                            class="text-[14px] md:text-base text-gray-700 font-medium tracking-wide mt-1">BBA LLB</div>
+                    </div>
+
+                    <div class="mb-8 mt-2">
+                        <div
+                            class="inline-block bg-[#e82538] text-white text-sm md:text-base px-4 py-1.5 rounded-[3px] tracking-wide shadow-sm">
+                            CTC <span id="placement-ctc" class="font-extrabold">28.17 LPA</span> PER ANNUM
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 mt-2">
+                        <div class="text-xs md:text-sm font-bold text-gray-800 tracking-wider">PLACED AT</div>
+                        <!-- Company Logo -->
+                        <div class="flex flex-col items-center ml-2">
+                            <div class="flex flex-wrap justify-center items-center w-8 h-8 text-[#c5a968]">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full">
+                                    <path
+                                        d="M12 2A10 10 0 1022 12 10.011 10.011 0 0012 2zm0 18a8 8 0 118-8 8.009 8.009 0 01-8 8zm1-13h-2v4H7v2h4v4h2v-4h4v-2h-4z"
+                                        opacity="0.8" />
+                                </svg>
+                            </div>
+                            <div id="placement-company"
+                                class="text-[8px] md:text-[10px] font-serif text-[#c5a968] font-bold tracking-tight mt-1 text-center">
+                                Shardul Amarchand Mangaldas</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Dots Pagination Navigation -->
+            <div id="placement-dots" class="flex justify-center gap-3 mt-8">
+                <!-- Dots will be injected here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Recruiters Section -->
+    <section class="w-full bg-[#f8f9fc] py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2
+                class="text-3xl md:text-4xl font-extrabold text-bennett-blue text-center uppercase mb-10 tracking-tight">
+                KEY RECRUITERS</h2>
+
+            <div class="relative w-full overflow-hidden px-2">
+                <!-- Slider Track -->
+                <div id="recruiters-track" class="flex items-center transition-transform duration-500 ease-in-out">
+                    <!-- Cards will be populated here via JS -->
+                </div>
+            </div>
+
+            <!-- Dots Pagination Navigation -->
+            <div id="recruiters-dots" class="flex justify-center gap-2 mt-8">
+                <!-- Dots injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="w-full bg-[#f0f3fd] py-16 md:py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-[28px] md:text-[42px] font-extrabold text-[#1a2b5c] mb-6">Frequently Asked
+                Questions</h2>
+
+            <!-- Tabs -->
+            <div class="flex flex-wrap gap-3 md:gap-4 mb-8">
+                <button
+                    class="faq-tab bg-[#0059a4] text-white px-6 md:px-8 py-2 md:py-2.5 rounded-[4px] font-medium text-[20px] md:text-sm uppercase tracking-wide transition shadow-sm"
+                    data-category="general">GENERAL</button>
+                <button
+                    class="faq-tab bg-white text-[#0059a4] px-6 md:px-8 py-2 md:py-2.5 rounded-[4px] font-medium text-[20px] md:text-sm uppercase tracking-wide transition shadow-sm"
+                    data-category="academics">ACADEMICS</button>
+                <button
+                    class="faq-tab bg-white text-[#0059a4] px-6 md:px-8 py-2 md:py-2.5 rounded-[4px] font-medium text-[20px] md:text-sm uppercase tracking-wide transition shadow-sm"
+                    data-category="admission">ADMISSION</button>
+            </div>
+
+            <!-- FAQ Container -->
+            <div id="faq-container" class="flex flex-col">
+                <!-- Items injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const programsData = {
+            "ai": {
+                title: "School of Artificial Intelligence",
+                sections: [
+                    { category: "Undergraduate Programs", programs: ["B.Tech (Artificial Intelligence)", "B.Sc. (Artificial Intelligence)", "BCA (Artificial Intelligence)"] },
+                    { category: "Postgraduate Programs", programs: ["M.Tech (Artificial Intelligence)", "M.Sc. (Artificial Intelligence)", "MCA (Artificial Intelligence)", "M.Tech (Artificial Intelligence) + PhD", "PG Diploma AI in Healthcare <br> (in collaboration with MAX Healthcare)"] },
+                    { category: "Doctoral Program", programs: ["Ph.D. (Doctor of Philosophy)"] }
+                ]
+            },
+            "cset": {
+                title: "School of Computer Science Engineering & Technology",
+                sections: [
+                    { category: "Undergraduate Programs", programs: ["B.Tech (Computer Science Engineering)", "BCA (Data Science)", "BCA (Cloud Computing)"] },
+                    { category: "Postgraduate Programs", programs: ["M.Tech (Computer Science Engineering)", "MCA"] },
+                    { category: "Doctoral Program", programs: ["Ph.D. (Computer Science Engineering)"] }
+                ]
+            },
+            "se": { title: "School of Engineering & Applied Science", sections: [{ category: "Undergraduate Programs", programs: ["B.Tech (Mechanical Engineering)", "B.Tech (Electronics & Communication Engineering)", "B.Tech (Engineering Physics)"] }] },
+            "sm": { title: "School of Management", sections: [{ category: "Undergraduate Programs", programs: ["BBA"] }, { category: "Postgraduate Programs", programs: ["MBA"] }, { category: "Doctoral Program", programs: ["Ph.D. in Management"] }] },
+            "sl": { title: "School of Law", sections: [{ category: "Undergraduate Programs", programs: ["BA LLB (Hons)", "BBA LLB (Hons)"] }, { category: "Postgraduate Programs", programs: ["LLM"] }, { category: "Doctoral Program", programs: ["Ph.D. in Law"] }] },
+            "sd": { title: "School of Design", sections: [{ category: "Undergraduate Programs", programs: ["B.Des (Visual Communication)", "B.Des (Product Design)"] }] },
+            "sla": { title: "School of Liberal Arts", sections: [{ category: "Undergraduate Programs", programs: ["BA (Liberal Arts)"] }, { category: "Doctoral Program", programs: ["Ph.D."] }] },
+            "tsm": { title: "Times School of Media", sections: [{ category: "Undergraduate Programs", programs: ["BA (Journalism & Mass Communication)", "BA (Film & TV)"] }, { category: "Postgraduate Programs", programs: ["PG Diploma in Digital Media"] }] },
+            "sgp": { title: "School of Global Pathways", sections: [{ category: "Programs", programs: ["International Immersion Programs", "Dual Degree Programs in collaboration with top global universities"] }] },
+            "iip": { title: "Industry Integrated Programs", sections: [{ category: "Programs", programs: ["B.Tech with Industry Focus", "Specialized Certifications"] }] }
+        };
+
+        const sidebarTabs = document.querySelectorAll('.school-tab');
+        const programsContent = document.getElementById('programs-content');
+
+        sidebarTabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Remove active classes from all tabs
+                sidebarTabs.forEach(t => {
+                    t.classList.remove('bg-bennett-blue', 'text-white');
+                    t.classList.add('text-gray-700', 'hover:bg-gray-100');
+                });
+
+                // Add active classes to the clicked tab
+                this.classList.remove('text-gray-700', 'hover:bg-gray-100');
+                this.classList.add('bg-bennett-blue', 'text-white');
+
+                // Get ID and data
+                const schoolId = this.getAttribute('data-school');
+                const data = programsData[schoolId];
+
+                if (data) {
+                    let htmlStr = `<h3 class="text-lg md:text-xl font-bold text-bennett-blue mb-4 pb-2 border-b-2 border-bennett-blue inline-block">${data.title}</h3><div class="mt-2 space-y-6">`;
+
+                    data.sections.forEach(sec => {
+                        htmlStr += `<div><h4 class="text-sm font-extrabold text-gray-800 mb-3">${sec.category}</h4><ul class="space-y-2">`;
+                        sec.programs.forEach(prog => {
+                            htmlStr += `<li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> ${prog}
+                                    </li>`;
+                        });
+                        htmlStr += `</ul></div>`;
+                    });
+
+                    htmlStr += `</div>`;
+                    programsContent.innerHTML = htmlStr;
+                }
+            });
+        });
+
+        const placementData = [
+            {
+                quote: "\"Lift your career <br class='hidden md:block'>beyond expectations\"",
+                name: "Shambhavi Singh",
+                course: "BBA LLB",
+                ctc: "28.17 LPA",
+                company: "Shardul Amarchand Mangaldas"
+            },
+            {
+                quote: "\"Exceptional faculty <br class='hidden md:block'>and global exposure\"",
+                name: "Rahul Verma",
+                course: "B.Tech CSE",
+                ctc: "45.50 LPA",
+                company: "Microsoft"
+            },
+            {
+                quote: "\"A transformative <br class='hidden md:block'>learning journey\"",
+                name: "Ananya Sharma",
+                course: "MBA",
+                ctc: "22.40 LPA",
+                company: "Deloitte"
+            },
+            {
+                quote: "\"Industry-ready <br class='hidden md:block'>from day one\"",
+                name: "Vikram Aditya",
+                course: "BCA Data Science",
+                ctc: "18.00 LPA",
+                company: "Amazon"
+            },
+            {
+                quote: "\"World-class infrastructure <br class='hidden md:block'>for innovation\"",
+                name: "Priya Desai",
+                course: "B.Des",
+                ctc: "15.50 LPA",
+                company: "IBM"
+            },
+            {
+                quote: "\"Unmatched support <br class='hidden md:block'>for startup ideas\"",
+                name: "Arjun Nair",
+                course: "BBA",
+                ctc: "12.00 LPA",
+                company: "KPMG"
+            }
+        ];
+
+        let currentPlacementIndex = 0;
+        const placementDotsContainer = document.getElementById('placement-dots');
+        const carouselContainer = document.getElementById('placements-carousel-container');
+
+        // Elements to update
+        const elQuote = document.getElementById('placement-quote');
+        const elName = document.getElementById('placement-name');
+        const elCourse = document.getElementById('placement-course');
+        const elCtc = document.getElementById('placement-ctc');
+        const elCompany = document.getElementById('placement-company');
+
+        function updatePlacementCarousel(index) {
+            // Fade out
+            carouselContainer.style.opacity = '0';
+
+            setTimeout(() => {
+                const data = placementData[index];
+                elQuote.innerHTML = data.quote;
+                elName.textContent = data.name;
+                elCourse.textContent = data.course;
+                elCtc.textContent = data.ctc;
+                elCompany.textContent = data.company;
+
+                // Update dots
+                const dots = placementDotsContainer.querySelectorAll('button');
+                dots.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.className = 'w-2 h-2 rounded-full bg-bennett-blue transition';
+                    } else {
+                        dot.className = 'w-2 h-2 rounded-full bg-gray-200 hover:bg-gray-300 transition cursor-pointer';
+                    }
+                });
+
+                // Fade in
+                carouselContainer.style.opacity = '1';
+            }, 300); // Wait for fade out
+        }
+
+        function initPlacementCarousel() {
+            placementDotsContainer.innerHTML = '';
+            placementData.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.className = i === 0 ? 'w-2 h-2 rounded-full bg-bennett-blue transition' : 'w-2 h-2 rounded-full bg-gray-200 hover:bg-gray-300 transition cursor-pointer';
+                dot.addEventListener('click', () => {
+                    currentPlacementIndex = i;
+                    updatePlacementCarousel(currentPlacementIndex);
+                });
+                placementDotsContainer.appendChild(dot);
+            });
+            updatePlacementCarousel(0);
+        }
+
+        initPlacementCarousel();
+
+        // Optional Auto-slide
+        setInterval(() => {
+            currentPlacementIndex = (currentPlacementIndex + 1) % placementData.length;
+            updatePlacementCarousel(currentPlacementIndex);
+        }, 5000);
+
+        // --- KEY RECRUITERS SLIDER LOGIC ---
+        const recruitersData = [
+            '<div class="font-bold text-[#00529b] text-xl flex flex-col items-center leading-none tracking-tight"><span class="text-2xl">TATA</span><span class="text-[10px] tracking-widest mt-1 text-center">TATA POWER</span></div>',
+            '<div class="font-bold text-[#00338d] text-3xl font-serif tracking-tighter" style="font-style: italic;">KPMG</div>',
+            '<div class="font-serif font-bold text-gray-900 leading-tight text-center"><span class="text-xl tracking-tight">Goldman</span><br><span class="text-xl tracking-tight">Sachs</span></div>',
+            '<div class="font-bold text-black text-2xl flex items-center tracking-tight">Deloitte<span class="text-[#86bc25] text-3xl leading-none">.</span></div>',
+            '<div class="w-[60px] h-[60px] rounded-full border-[3px] border-[#007db8] text-[#007db8] font-bold text-lg flex items-center justify-center tracking-tighter">DELL</div>',
+            '<div class="font-bold text-[#0070ad] text-xl tracking-tight flex items-center">Capgemini <span class="text-[#0070ad] font-serif text-2xl leading-none ml-1 relative -top-1">♣</span></div>',
+            '<div class="flex items-center gap-1"><span class="text-[#e31837] font-bold text-3xl lowercase tracking-tighter pr-1 border-r border-gray-300">tcs</span><div class="text-[6px] font-bold text-[#00529b] leading-tight flex flex-col"><span>TATA</span><span>CONSULTANCY</span><span>SERVICES</span></div></div>'
+        ];
+
+        const recruitersTrack = document.getElementById('recruiters-track');
+        const recruitersDotsContainer = document.getElementById('recruiters-dots');
+        let currentRecruiterPage = 0;
+
+        let isMobileRecruiters = window.innerWidth < 768;
+        let recruitersPerPage = isMobileRecruiters ? 2 : 4; // Display limits
+
+        // Let's duplicate data to make it look full and slide better if needed,
+        // but for now, we just slide pages.
+        function renderRecruiters() {
+            recruitersTrack.className = 'flex items-center gap-4 transition-transform duration-500 ease-in-out';
+            recruitersTrack.innerHTML = '';
+            recruitersData.forEach(logoHtml => {
+                const card = document.createElement('div');
+                card.className = "bg-white py-4 px-6 md:py-6 md:px-8 shadow-sm flex items-center justify-center min-w-[150px] md:min-w-[200px] h-[100px] md:h-[120px] shrink-0";
+                card.innerHTML = logoHtml;
+                recruitersTrack.appendChild(card);
+            });
+            updateRecruiterDots();
+            moveRecruiterSlider();
+        }
+
+        function updateRecruiterDots() {
+            recruitersDotsContainer.innerHTML = '';
+            recruitersPerPage = isMobileRecruiters ? 2 : 4;
+            // Calculate how many times we can slide
+            // If we slide 1 item at a time instead of full pages, we need dots = total - perPage + 1
+            const totalDots = Math.max(1, recruitersData.length - recruitersPerPage + 1);
+
+            for (let i = 0; i < totalDots; i++) {
+                const dot = document.createElement('button');
+                dot.className = i === currentRecruiterPage ? 'w-2 h-2 rounded-full bg-bennett-blue transition' : 'w-2 h-2 rounded-full bg-gray-200 hover:bg-gray-300 transition cursor-pointer';
+                dot.addEventListener('click', () => {
+                    currentRecruiterPage = i;
+                    updateRecruiterDots();
+                    moveRecruiterSlider();
+                });
+                recruitersDotsContainer.appendChild(dot);
+            }
+        }
+
+        function moveRecruiterSlider() {
+            // Card width + gap = 150 + 16 on mobile, 200 + 16 on desktop
+            const cardWidth = isMobileRecruiters ? 150 + 16 : 200 + 16;
+            const translateValue = currentRecruiterPage * cardWidth;
+            recruitersTrack.style.transform = `translateX(-${translateValue}px)`;
+        }
+
+        window.addEventListener('resize', () => {
+            const wasMobile = isMobileRecruiters;
+            isMobileRecruiters = window.innerWidth < 768;
+            if (wasMobile !== isMobileRecruiters) {
+                currentRecruiterPage = 0;
+                renderRecruiters();
+            }
+        });
+
+        renderRecruiters();
+
+        // Auto-slider for Key Recruiters
+        setInterval(() => {
+            const totalDots = Math.max(1, recruitersData.length - recruitersPerPage + 1);
+            currentRecruiterPage = (currentRecruiterPage + 1) % totalDots;
+            updateRecruiterDots();
+            moveRecruiterSlider();
+        }, 3500);
+
+        // --- FAQ LOGIC ---
+        const faqData = {
+            general: [
+                { q: "Is Bennett university UGC-approved?", a: "Yes, Bennett University is UGC approved. The UGC website lists Bennett University among the 300+ private universities established by the Acts of Legislatures of various states, which are authorised to confer degrees as specified by the UGC under Section 22 of the UGC Act." },
+                { q: "Where is Bennett University located?", a: "Bennett University is located in Greater Noida, Uttar Pradesh, India, in a sprawling 68-acre campus." },
+                { q: "What facilities and infrastructure does the university offer?", a: "The university offers state-of-the-art facilities including modern classrooms, advanced labs, an extensive library, comprehensive sports complexes, and comfortable hostels." },
+                { q: "What is campus life like at Bennett University?", a: "Campus life is diverse and vibrant with 40+ student-led clubs, annual cultural fests, extensive sports events, and continuous industry interactions to keep students engaged." },
+                { q: "What placement opportunities does Bennett University offer?", a: "The university boasts a dedicated placement cell with stellar track records, offering placements in top MNCs and corporations globally with packages up to ₹1.37 CR PA." },
+                { q: "Does Bennett University offer scholarships?", a: "Yes, we offer up to 100% scholarships based on academic merit, entrance exam scores, and outstanding sports achievements." },
+                { q: "Which companies recruit from Bennett University?", a: "Top recruiters include Tata Power, KPMG, Goldman Sachs, Deloitte, Dell, Capgemini, TCS, Microsoft, Amazon, IBM, and many more industry leaders." },
+                { q: "Does the university provide internship support?", a: "Yes, extensive internship support is provided through our industry partnerships, the career services center, and corporate collaborations." }
+            ],
+            academics: [
+                { q: "What programs are offered at Bennett University?", a: "We offer 50+ programs across Engineering, Management, Law, Media, Liberal Arts, and Design at Undergraduate, Postgraduate, and Doctoral levels." },
+                { q: "What is the student-to-faculty ratio?", a: "We maintain a highly favorable and low student-to-faculty ratio to ensure personalized attention, quality education, and dedicated mentoring from our 90%+ Ph.D. faculty." },
+                { q: "Are the programs industry-aligned?", a: "Absolutely. Our curriculum is designed in collaboration with industry experts and corporate partners to ensure students learn highly relevant and in-demand skills." }
+            ],
+            admission: [
+                { q: "What is the admission procedure?", a: "Admissions are strictly based on merit and entrance exams like JEE, SAT, CUET, or Bennett University's own specific entrance tests depending on the chosen program." },
+                { q: "When do admissions open?", a: "Admissions generally open in the first quarter of the year. Please check our official website regularly for the latest deadlines and application forms." },
+                { q: "Can I apply for multiple programs?", a: "Yes, candidates can apply for multiple programs provided they meet the specific eligibility criteria and appear for the required entrance exams for each." }
+            ]
+        };
+
+        const faqContainer = document.getElementById('faq-container');
+        const faqTabs = document.querySelectorAll('.faq-tab');
+
+        function renderFaqs(category) {
+            faqContainer.innerHTML = '';
+            const faqs = faqData[category];
+
+            faqs.forEach((faq, index) => {
+                const item = document.createElement('div');
+                item.className = 'border-b border-[#e1e6f9] py-4';
+
+                const questionHtml = `
+                    <button class="faq-question w-full text-left flex justify-between items-center text-[#1a5b9c] text-[20px] cursor-pointer focus:outline-none tracking-wide">
+                        <span>${faq.q}</span>
+                    </button>
+                    <div class="faq-answer mt-3 text-sm md:text-[16px] text-gray-700 leading-relaxed font-medium hidden pr-4">
+                        ${faq.a}
+                    </div>
+                `;
+
+                item.innerHTML = questionHtml;
+                faqContainer.appendChild(item);
+
+                const btn = item.querySelector('.faq-question');
+                const ans = item.querySelector('.faq-answer');
+
+                btn.addEventListener('click', () => {
+                    const isHidden = ans.classList.contains('hidden');
+                    // Optional: Close all other answers for a strict accordion effect
+                    // document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+
+                    if (isHidden) {
+                        ans.classList.remove('hidden');
+                    } else {
+                        ans.classList.add('hidden');
+                    }
+                });
+
+                // Open the first one by default if it's the general category (just like the screenshot)
+                if (index === 0 && category === 'general') {
+                    ans.classList.remove('hidden');
+                }
+            });
+        }
+
+        faqTabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Remove active classes from all tabs
+                faqTabs.forEach(t => {
+                    t.classList.remove('bg-[#0059a4]', 'text-white');
+                    t.classList.add('bg-white', 'text-[#0059a4]');
+                });
+
+                // Add active classes to the clicked tab
+                this.classList.remove('bg-white', 'text-[#0059a4]');
+                this.classList.add('bg-[#0059a4]', 'text-white');
+
+                // Render new FAQs
+                const category = this.getAttribute('data-category');
+                renderFaqs(category);
+            });
+        });
+
+        // Initialize with 'general' FAQs
+        renderFaqs('general');
+
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            alert('Login attempted for: ' + email);
+        });
+    </script>
+
+    <!-- Bottom Red CTA Banner -->
+    <section class="w-full bg-[#cb202d] py-6 flex justify-center items-center">
+        <a href="#"
+            class="bg-[#0059a4] text-white px-8 md:px-10 py-2.5 md:py-3 rounded-full font-bold text-sm md:text-base tracking-wide shadow-md hover:bg-[#004785] transition-colors duration-300">Apply
+            Now</a>
+    </section>
+
+    <!-- Bottom Branding Bar -->
+    <!-- <section class="w-full bg-white border-t border-gray-200 py-3 px-4 flex justify-end items-center">
+        
+        <div class="flex items-center gap-2 pr-2 md:pr-10">
+            <svg class="h-5 md:h-6 w-auto" viewBox="0 0 100 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+             
+                <path d="M4 12 C4 12, 12 1, 16 12 C20 23, 28 12, 28 12" stroke="#cb202d" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12 C4 12, 12 1, 16 12 C20 23, 28 12, 28 12" stroke="#0059a4" stroke-dasharray="14 100"
+                    stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              
+                <text x="34" y="18" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="18"
+                    fill="#111">meritto</text>
+            </svg>
+        </div>
+    </section> -->
+</body>
+
+</html>
