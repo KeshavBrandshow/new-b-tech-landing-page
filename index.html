@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accurate Institute Admissions 2026-27</title>
     <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,6 +23,8 @@
                     },
                     fontFamily: {
                         'poppins': ['Poppins', 'sans-serif'],
+                        'cinzel': ['Cinzel', 'serif'],
+                        'bookman': ['Libre Baskerville', 'serif'],
                     }
                 }
             }
@@ -123,6 +126,28 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #102d7a;
         }
+
+        /* Glassmorphism Form Styles */
+        .glass-form {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .glass-input {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .glass-input:focus {
+            background: rgba(255, 255, 255, 1);
+            border-color: #FACC15;
+            box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.2);
+            outline: none;
+        }
     </style>
 </head>
 
@@ -135,37 +160,94 @@
         <!-- Dark Blue Brand Overlay -->
         <div class="absolute inset-0 main-overlay z-0"></div>
 
-        <div class="relative z-10">
-            <!-- Header Logos -->
-            <header class="flex flex-wrap items-center gap-8 mb-12 ml-4 md:ml-20">
-                
-                
-            </header>
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Left Side: Hero Text -->
+                <div class="w-full">
+                    <!-- Header Logos -->
+                    <h3
+                        class="nav-text font-bookman font-extrabold text-xl md:text-2xl lg:text-xl xl:text-4xl 2xl:text-5xl font-black uppercase tracking-tight text-white leading-none">
+                        Accurate
+                    </h3>
 
-            <!-- Large Text -->
-            <div class="max-w-4xl ml-4 md:ml-20">
-                <h1 class="font-extrabold text-white ug-pg-text drop-shadow-2xl">
-                    <span class="text-[80px] md:text-[180px]">B.Tech</span>
-                </h1>
-                <h2 class="text-4xl md:text-7xl font-bold text-accurate-yellow mt-2 mb-8 text-shadow-strong">
-                    ADMISSIONS OPEN 2026
-                </h2>
+                    <h3
+                        class="logo-subtitle font-bookman font-extrabold text-xs md:text-sm lg:text-xs xl:text-xl 2xl:text-2xl font-medium text-blue-200 lg:-mt-0.5 xl:-mt-1 uppercase whitespace-nowrap">
+                        Group of Institutions
+                    </h3>
+                    <header class="flex flex-wrap items-center gap-8 mb-12">
+                        <!-- Logos can be placed here -->
+                    </header>
 
-                <!-- Disciplines -->
-                <div
-                    class="flex flex-wrap text-white font-bold text-sm md:text-xl tracking-tight leading-relaxed max-w-5xl uppercase">
-                    <span class="discipline-bar !border-white">Artificial Intelligence</span>
-                    <span class="discipline-bar !border-white">Engineering</span>
-                    <span class="discipline-bar !border-white">Applied Sciences</span>
-                    <span class="discipline-bar !border-white">Liberal Arts</span>
-                    <span class="discipline-bar !border-white">Law</span>
-                    <span class="discipline-bar !border-white">Media</span>
-                    <span class="discipline-bar !border-white">Design</span>
-                    <span class="discipline-bar !border-white">Management</span>
-                    <span class="drop-shadow-sm">Global Pathways</span>
+                    <!-- Large Text -->
+                    <div class="">
+                        <h1 class="font-extrabold text-white ug-pg-text drop-shadow-2xl">
+                            <span class="text-[80px] md:text-[150px] lg:text-[180px]">B.Tech</span>
+                        </h1>
+                        <h2
+                            class="text-4xl md:text-5xl lg:text-7xl font-bold text-accurate-yellow mt-2 mb-8 text-shadow-strong">
+                            ADMISSIONS OPEN 2026
+                        </h2>
+
+                        <!-- Disciplines -->
+                        <div
+                            class="flex flex-wrap text-white font-bold text-sm md:text-lg tracking-tight leading-relaxed max-w-2xl uppercase">
+                            <span class="discipline-bar !border-white">B.Tech in Computer Science & Engineering</span>
+                            <span class="discipline-bar !border-white"> AI & ML</span>
+                            <span class="discipline-bar !border-white"> Mechanical Engineering</span>
+                            <span class="discipline-bar !border-white">Electronics & Communication</span>
+                            <!-- <span class="discipline-bar !border-white">Law</span>
+                            <span class="discipline-bar !border-white">Media</span>
+                            <span class="discipline-bar !border-white">Design</span>
+                            <span class="discipline-bar !border-white">Management</span>
+                            <span class="drop-shadow-sm">Global Pathways</span> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Enquiry Form -->
+                <div class="w-full md:w-1/2 flex justify-center lg:justify-end">
+                    <div class="glass-form rounded-2xl p-6 md:p-8 w-full max-w-md">
+                        <h3 class="text-2xl font-bold text-white mb-6 text-center">Enquire Now</h3>
+                        <form action="#" class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Full Name" required
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 font-medium">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email Address" required
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 font-medium">
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="Phone Number" required
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 font-medium">
+                            </div>
+                            <div>
+                                <select required
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 font-medium appearance-none">
+                                    <option value="" disabled selected>Select Course</option>
+                                    <option value="btech-ai">B.Tech in Computer Science & Engineering</option>
+                                    <option value="btech-cs">B.Tech in Computer Science & Engineering (AI & ML)</option>
+                                    <option value="btech-me">B.Tech in Mechanical Engineering</option>
+                                    <option value="btech-ece">B.Tech in Electronics & Communication Engineering</option>
+                                    <!-- <option value="mba">MBA</option>
+                                    <option value="law">Law</option> -->
+                                </select>
+                            </div>
+                            <div>
+                                <textarea placeholder="Your Message" rows="3"
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 font-medium"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-accurate-yellow text-accurate-blue font-extrabold py-4 rounded-lg hover:bg-yellow-400 transition transform hover:scale-[1.02] active:scale-[0.98] shadow-lg text-lg uppercase tracking-wider">
+                                Submit Enquiry
+                            </button>
+                        </form>
+                        <p class="text-white text-[10px] text-center mt-4 opacity-80 leading-tight">
+                            By clicking submit, you agree to our privacy policy and to receive communications.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
@@ -192,37 +274,51 @@
                 <!-- Stat 1 -->
                 <div
                     class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
-                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight">₹1.37</div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight">₹1.30</div>
                     <div class="text-xl md:text-2xl font-extrabold text-accurate-dark-blue leading-tight mb-2">CR. PA
                     </div>
-                    <div class="text-[13px] md:text-sm text-gray-500 font-medium text-center">Highest Package</div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium text-center">Highest International
+                        Package</div>
                 </div>
 
                 <!-- Stat 2 -->
                 <div
                     class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
-                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">186+
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight">₹17</div>
+                    <div class="text-xl md:text-2xl font-extrabold text-accurate-dark-blue leading-tight mb-2">Lakhs
+                        PA
                     </div>
-                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">years
-                        of<br>Times Group<br>Legacy</div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium text-center">Highest Domestic
+                        Package</div>
+                </div>
+                <!-- Stat 5 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight">₹7</div>
+                    <div class="text-xl md:text-2xl font-extrabold text-accurate-dark-blue leading-tight mb-2">Lakhs
+                        PA
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium text-center"> Average
+                        Package</div>
                 </div>
 
                 <!-- Stat 3 -->
                 <div
                     class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
-                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">120+
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">550+
                     </div>
                     <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">
-                        International<br>Collaborations</div>
+                        Recruiters</div>
                 </div>
 
                 <!-- Stat 4 -->
                 <div
                     class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
-                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">70+
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">100%
                     </div>
                     <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">
-                        Startups<br>Launched</div>
+                        Placement <br>
+                        Assurance</div>
                 </div>
 
                 <!-- Stat 5 -->
@@ -235,13 +331,13 @@
                 </div>
 
                 <!-- Stat 6 -->
-                <div
+                <!-- <div
                     class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
                     <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">10+
                     </div>
                     <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">Days
                         Global<br>Immersion Program<br>Across 5 Countries</div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -263,8 +359,7 @@
             <!-- Left Side Area -->
             <div class="w-full md:w-3/5 lg:w-[55%]">
                 <h2 class="text-3xl md:text-3xl font-extrabold text-accurate-blue uppercase mb-6 drop-shadow-sm ml-2">
-                    50+
-                    Programs</h2>
+                    B.Tech Programs Specializations</h2>
 
                 <!-- Card Container -->
                 <div
@@ -275,34 +370,17 @@
                         class="w-full md:w-2/5 bg-white overflow-y-auto border-r border-gray-200 p-2 space-y-1 custom-scrollbar">
                         <div data-school="ai"
                             class="school-tab bg-accurate-blue text-white text-xs md:text-sm font-medium p-3 rounded cursor-pointer transition">
-                            School of Artificial Intelligence</div>
+                            B.Tech in Computer Science & Engineering</div>
                         <div data-school="cset"
                             class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            School of Computer Science Engineering & Technology</div>
+                            B.Tech in Computer Science & Engineering (AI & ML)</div>
                         <div data-school="se"
                             class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            School of Engineering & Applied Science</div>
+                            B.Tech in Mechanical Engineering</div>
                         <div data-school="sm"
                             class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            School of Management</div>
-                        <div data-school="sl"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            School of Law</div>
-                        <div data-school="sd"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            School of Design</div>
-                        <div data-school="sla"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            School of Liberal Arts</div>
-                        <div data-school="tsm"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            Times School of Media</div>
-                        <div data-school="sgp"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            School of Global Pathways</div>
-                        <div data-school="iip"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            Industry Integrated Programs</div>
+                            B.Tech in Electronics & Communication Engineering
+                        </div>
                     </div>
 
                     <!-- Main Content (Programs) -->
@@ -310,64 +388,19 @@
                         class="w-full md:w-3/5 bg-[#f8f9fc] p-6 lg:p-8 overflow-y-auto custom-scrollbar relative">
                         <h3
                             class="text-lg md:text-xl font-bold text-accurate-blue mb-4 pb-2 border-b-2 border-accurate-blue inline-block">
-                            School of Artificial Intelligence</h3>
+                            B.Tech in Computer Science & Engineering</h3>
 
                         <div class="mt-2 space-y-6">
                             <!-- Category 1 -->
                             <div>
-                                <h4 class="text-sm font-extrabold text-gray-800 mb-3">Undergraduate Programs</h4>
-                                <ul class="space-y-2">
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> B.Tech
-                                        (Artificial Intelligence)
-                                    </li>
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> B.Sc.
-                                        (Artificial Intelligence)
-                                    </li>
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> BCA
-                                        (Artificial Intelligence)
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Category 2 -->
-                            <div>
-                                <h4 class="text-sm font-extrabold text-gray-800 mb-3">Postgraduate Programs</h4>
-                                <ul class="space-y-2">
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> M.Tech
-                                        (Artificial Intelligence)
-                                    </li>
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> M.Sc.
-                                        (Artificial Intelligence)
-                                    </li>
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> MCA
-                                        (Artificial Intelligence)
-                                    </li>
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> M.Tech
-                                        (Artificial Intelligence) + PhD
-                                    </li>
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> PG
-                                        Diploma AI in Healthcare <br> (in collaboration with MAX Healthcare)
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Category 3 -->
-                            <div>
-                                <h4 class="text-sm font-extrabold text-gray-800 mb-3">Doctoral Program</h4>
-                                <ul class="space-y-2">
-                                    <li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> Ph.D.
-                                        (Doctor of Philosophy)
-                                    </li>
-                                </ul>
+                                <p class="text-xs md:text-[13px] text-gray-700 font-medium">Master the fundamentals of
+                                    computing, software development, and modern technologies to build the future of
+                                    tech.</p>
+                                <div class="w-full mt-4 overflow-hidden rounded-xl shadow-lg group">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc1VhYTQheCWUIrwA-AkVKxY1bqvCQjzajqA&s"
+                                        alt="Program Image"
+                                        class="w-full h-48 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -767,29 +800,47 @@
     <script>
         const programsData = {
             "ai": {
-                title: "School of Artificial Intelligence",
+                title: "B.Tech in Computer Science & Engineering",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc1VhYTQheCWUIrwA-AkVKxY1bqvCQjzajqA&s",
                 sections: [
-                    { category: "Undergraduate Programs", programs: ["B.Tech (Artificial Intelligence)", "B.Sc. (Artificial Intelligence)", "BCA (Artificial Intelligence)"] },
-                    { category: "Postgraduate Programs", programs: ["M.Tech (Artificial Intelligence)", "M.Sc. (Artificial Intelligence)", "MCA (Artificial Intelligence)", "M.Tech (Artificial Intelligence) + PhD", "PG Diploma AI in Healthcare <br> (in collaboration with MAX Healthcare)"] },
-                    { category: "Doctoral Program", programs: ["Ph.D. (Doctor of Philosophy)"] }
+                    { programs: ["Master the fundamentals of computing, software development, and modern technologies to build the future of tech."] }
                 ]
             },
             "cset": {
-                title: "School of Computer Science Engineering & Technology",
+                title: "B.Tech in Computer Science & Engineering (AI & ML)",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3jXMc4kxMHkwFIW42cqxw7cuiX8_OqWnlQ&s",
                 sections: [
-                    { category: "Undergraduate Programs", programs: ["B.Tech (Computer Science Engineering)", "BCA (Data Science)", "BCA (Cloud Computing)"] },
-                    { category: "Postgraduate Programs", programs: ["M.Tech (Computer Science Engineering)", "MCA"] },
-                    { category: "Doctoral Program", programs: ["Ph.D. (Computer Science Engineering)"] }
+                    { programs: ["Specialized program focusing on Artificial Intelligence and Machine Learning algorithms, data science, and intelligent systems."] }
                 ]
             },
-            "se": { title: "School of Engineering & Applied Science", sections: [{ category: "Undergraduate Programs", programs: ["B.Tech (Mechanical Engineering)", "B.Tech (Electronics & Communication Engineering)", "B.Tech (Engineering Physics)"] }] },
-            "sm": { title: "School of Management", sections: [{ category: "Undergraduate Programs", programs: ["BBA"] }, { category: "Postgraduate Programs", programs: ["MBA"] }, { category: "Doctoral Program", programs: ["Ph.D. in Management"] }] },
-            "sl": { title: "School of Law", sections: [{ category: "Undergraduate Programs", programs: ["BA LLB (Hons)", "BBA LLB (Hons)"] }, { category: "Postgraduate Programs", programs: ["LLM"] }, { category: "Doctoral Program", programs: ["Ph.D. in Law"] }] },
-            "sd": { title: "School of Design", sections: [{ category: "Undergraduate Programs", programs: ["B.Des (Visual Communication)", "B.Des (Product Design)"] }] },
-            "sla": { title: "School of Liberal Arts", sections: [{ category: "Undergraduate Programs", programs: ["BA (Liberal Arts)"] }, { category: "Doctoral Program", programs: ["Ph.D."] }] },
-            "tsm": { title: "Times School of Media", sections: [{ category: "Undergraduate Programs", programs: ["BA (Journalism & Mass Communication)", "BA (Film & TV)"] }, { category: "Postgraduate Programs", programs: ["PG Diploma in Digital Media"] }] },
-            "sgp": { title: "School of Global Pathways", sections: [{ category: "Programs", programs: ["International Immersion Programs", "Dual Degree Programs in collaboration with top global universities"] }] },
-            "iip": { title: "Industry Integrated Programs", sections: [{ category: "Programs", programs: ["B.Tech with Industry Focus", "Specialized Certifications"] }] }
+            "se": {
+                title: "B.Tech in Mechanical Engineering",
+                image: "https://www.accurate.in/engg/img/engineering/top-engg-campus.jpg",
+                sections: [
+                    { programs: ["Explore the world of machines, thermodynamics, and manufacturing with hands-on training in modern mechanical systems."] }
+                ]
+            },
+            "sm": {
+                title: "B.Tech in Electronics & Communication Engineering",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUjlraFMVc8qlDaRWeVmttwYtIEL5hq8t-Q&s",
+                sections: [
+                    { programs: ["Design and develop the next generation of communication systems, electronic circuits, and smart devices."] }
+                ]
+            },
+
+
+
+
+
+
+            // "se": { title: "B.Tech in Mechanical Engineering", sections: [{ category: "Undergraduate Programs", programs: ["B.Tech (Mechanical Engineering)", "B.Tech (Electronics & Communication Engineering)", "B.Tech (Engineering Physics)"] }] },
+            // "sm": { title: "B.Tech in Electronics & Communication Engineering", sections: [{ category: "Undergraduate Programs", programs: ["B.Tech (Electronics & Communication Engineering)"] }] },
+            // "sl": { title: "School of Law", sections: [{ category: "Undergraduate Programs", programs: ["BA LLB (Hons)", "BBA LLB (Hons)"] }, { category: "Postgraduate Programs", programs: ["LLM"] }, { category: "Doctoral Program", programs: ["Ph.D. in Law"] }] },
+            // "sd": { title: "School of Design", sections: [{ category: "Undergraduate Programs", programs: ["B.Des (Visual Communication)", "B.Des (Product Design)"] }] },
+            // "sla": { title: "School of Liberal Arts", sections: [{ category: "Undergraduate Programs", programs: ["BA (Liberal Arts)"] }, { category: "Doctoral Program", programs: ["Ph.D."] }] },
+            // "tsm": { title: "Times School of Media", sections: [{ category: "Undergraduate Programs", programs: ["BA (Journalism & Mass Communication)", "BA (Film & TV)"] }, { category: "Postgraduate Programs", programs: ["PG Diploma in Digital Media"] }] },
+            // "sgp": { title: "School of Global Pathways", sections: [{ category: "Programs", programs: ["International Immersion Programs", "Dual Degree Programs in collaboration with top global universities"] }] },
+            // "iip": { title: "Industry Integrated Programs", sections: [{ category: "Programs", programs: ["B.Tech with Industry Focus", "Specialized Certifications"] }] }
         };
 
         const sidebarTabs = document.querySelectorAll('.school-tab');
@@ -815,13 +866,25 @@
                     let htmlStr = `<h3 class="text-lg md:text-xl font-bold text-accurate-blue mb-4 pb-2 border-b-2 border-accurate-blue inline-block">${data.title}</h3><div class="mt-2 space-y-6">`;
 
                     data.sections.forEach(sec => {
-                        htmlStr += `<div><h4 class="text-sm font-extrabold text-gray-800 mb-3">${sec.category}</h4><ul class="space-y-2">`;
-                        sec.programs.forEach(prog => {
-                            htmlStr += `<li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
-                                        <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> ${prog}
-                                    </li>`;
-                        });
-                        htmlStr += `</ul></div>`;
+                        if (sec.category) {
+                            htmlStr += `<div><h4 class="text-sm font-extrabold text-gray-800 mb-3">${sec.category}</h4><ul class="space-y-2">`;
+                            sec.programs.forEach(prog => {
+                                htmlStr += `<li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                            <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> ${prog}
+                                        </li>`;
+                            });
+                            htmlStr += `</ul></div>`;
+                        } else {
+                            sec.programs.forEach(prog => {
+                                htmlStr += `<p class="text-xs md:text-[13px] text-gray-700 font-medium">${prog}</p>`;
+                            });
+                            if (data.image) {
+                                htmlStr += `<div class="w-full mt-4 overflow-hidden rounded-xl shadow-lg group">
+                                            <img src="${data.image}" alt="${data.title}" 
+                                                class="w-full h-48 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                                        </div>`;
+                            }
+                        }
                     });
 
                     htmlStr += `</div>`;
@@ -832,52 +895,52 @@
 
         const placementData = [
             {
-                quote: "\"Lift your career <br class='hidden md:block'>beyond expectations\"",
-                name: "Noopur Joshi",
-                course: "MBA",
+                quote: "\"Lift your career <br class='hidden md:block'>beyond \"",
+                name: "Adarsh Singh",
+                course: "B.Tech CSE",
                 ctc: "25.04 LPA",
-                company: "ONE IT Solution",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=800&q=80"
+                company: "OPPO  ",
+                image: "image/placement/adarsh-singh.webp"
             },
             {
                 quote: "\"Exceptional faculty <br class='hidden md:block'>and global exposure\"",
-                name: "Rahul Verma",
+                name: "Anjali Yadav",
                 course: "B.Tech CSE",
                 ctc: "45.50 LPA",
-                company: "Microsoft",
-                image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&h=800&q=80"
+                company: "Capital Boon",
+                image: "image/placement/anjali-yadav.webp"
             },
             {
                 quote: "\"A transformative <br class='hidden md:block'>learning journey\"",
-                name: "Ananya Sharma",
-                course: "MBA",
+                name: "Astha Singh",
+                course: "B.Tech CSE",
                 ctc: "22.40 LPA",
-                company: "Deloitte",
-                image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&h=800&q=80"
+                company: "Bajaj Finserv",
+                image: "image/placement/astha-singh.webp"
             },
             {
                 quote: "\"Industry-ready <br class='hidden md:block'>from day one\"",
-                name: "Vikram Aditya",
-                course: "BCA Data Science",
+                name: "Tausif Raja",
+                course: "B.Tech CSE",
                 ctc: "18.00 LPA",
-                company: "Amazon",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&h=800&q=80"
+                company: "HDFC Bank",
+                image: "image/placement/tausifraja.webp"
             },
             {
-                quote: "\"World-class infrastructure <br class='hidden md:block'>for innovation\"",
-                name: "Priya Desai",
-                course: "B.Des",
+                quote: "\"World-class <br class='hidden md:block'> innovation\"",
+                name: "Chandan Kumar",
+                course: "B.Tech CSE",
                 ctc: "15.50 LPA",
-                company: "IBM",
-                image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&h=800&q=80"
+                company: "SMC",
+                image: "image/placement/chandan-kumar.webp"
             },
             {
                 quote: "\"Unmatched support <br class='hidden md:block'>for startup ideas\"",
-                name: "Arjun Nair",
-                course: "BBA",
+                name: "Mohammad Navaid",
+                course: "B.Tech CSE",
                 ctc: "12.00 LPA",
-                company: "KPMG",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&h=800&q=80"
+                company: "HDFC Bank",
+                image: "image/placement/mohammad-navaid.webp"
             }
         ];
 
@@ -948,13 +1011,19 @@
 
         // --- KEY RECRUITERS SLIDER LOGIC ---
         const recruitersData = [
-            '<div class="font-bold text-[#00529b] text-xl flex flex-col items-center leading-none tracking-tight"><span class="text-2xl">TATA</span><span class="text-[10px] tracking-widest mt-1 text-center">TATA POWER</span></div>',
-            '<div class="font-bold text-[#00338d] text-3xl font-serif tracking-tighter" style="font-style: italic;">KPMG</div>',
-            '<div class="font-serif font-bold text-gray-900 leading-tight text-center"><span class="text-xl tracking-tight">Goldman</span><br><span class="text-xl tracking-tight">Sachs</span></div>',
-            '<div class="font-bold text-black text-2xl flex items-center tracking-tight">Deloitte<span class="text-[#86bc25] text-3xl leading-none">.</span></div>',
-            '<div class="w-[60px] h-[60px] rounded-full border-[3px] border-[#007db8] text-[#007db8] font-bold text-lg flex items-center justify-center tracking-tighter">DELL</div>',
-            '<div class="font-bold text-[#0070ad] text-xl tracking-tight flex items-center">Capgemini <span class="text-[#0070ad] font-serif text-2xl leading-none ml-1 relative -top-1">♣</span></div>',
-            '<div class="flex items-center gap-1"><span class="text-[#e31837] font-bold text-3xl lowercase tracking-tighter pr-1 border-r border-gray-300">tcs</span><div class="text-[6px] font-bold text-[#00529b] leading-tight flex flex-col"><span>TATA</span><span>CONSULTANCY</span><span>SERVICES</span></div></div>'
+            'image/placement-logo/Bajaj.webp',
+            'image/placement-logo/capital-boon.webp',
+            'image/placement-logo/credit-q.webp',
+            'image/placement-logo/d-mart.webp',
+            'image/placement-logo/first-point-creations.webp',
+            'image/placement-logo/genpact.webp',
+            'image/placement-logo/hdfc-placement.webp',
+            'image/placement-logo/icici-bank.webp',
+            'image/placement-logo/oppo.webp',
+            'image/placement-logo/smc.webp',
+            'image/placement-logo/suwasthi.webp',
+            'image/placement-logo/tide.webp',
+            'image/placement-logo/wipro.webp'
         ];
 
         const recruitersTrack = document.getElementById('recruiters-track');
@@ -969,10 +1038,10 @@
         function renderRecruiters() {
             recruitersTrack.className = 'flex items-center gap-4 transition-transform duration-500 ease-in-out';
             recruitersTrack.innerHTML = '';
-            recruitersData.forEach(logoHtml => {
+            recruitersData.forEach(logoSrc => {
                 const card = document.createElement('div');
                 card.className = "bg-white py-4 px-6 md:py-6 md:px-8 shadow-sm flex items-center justify-center min-w-[150px] md:min-w-[200px] h-[100px] md:h-[120px] shrink-0";
-                card.innerHTML = logoHtml;
+                card.innerHTML = `<img src="${logoSrc}" alt="Recruiter Logo" class="max-h-full max-w-full object-contain">`;
                 recruitersTrack.appendChild(card);
             });
             updateRecruiterDots();
@@ -1027,14 +1096,14 @@
         // --- FAQ LOGIC ---
         const faqData = {
             general: [
-                { q: "Is Accurate Institute UGC-approved?", a: "Yes, Accurate Institute is UGC approved. The UGC website lists Accurate Institute among the 300+ private universities established by the Acts of Legislatures of various states, which are authorised to confer degrees as specified by the UGC under Section 22 of the UGC Act." },
-                { q: "Where is Accurate Institute located?", a: "Accurate Institute is located in Greater Noida, Uttar Pradesh, India, in a sprawling 68-acre campus." },
-                { q: "What facilities and infrastructure does the university offer?", a: "The university offers state-of-the-art facilities including modern classrooms, advanced labs, an extensive library, comprehensive sports complexes, and comfortable hostels." },
-                { q: "What is campus life like at Accurate Institute?", a: "Campus life is diverse and vibrant with 40+ student-led clubs, annual cultural fests, extensive sports events, and continuous industry interactions to keep students engaged." },
-                { q: "What placement opportunities does Accurate Institute offer?", a: "The university boasts a dedicated placement cell with stellar track records, offering placements in top MNCs and corporations globally with packages up to ₹1.37 CR PA." },
-                { q: "Does Accurate Institute offer scholarships?", a: "Yes, we offer up to 100% scholarships based on academic merit, entrance exam scores, and outstanding sports achievements." },
-                { q: "Which companies recruit from Accurate Institute?", a: "Top recruiters include Tata Power, KPMG, Goldman Sachs, Deloitte, Dell, Capgemini, TCS, Microsoft, Amazon, IBM, and many more industry leaders." },
-                { q: "Does the university provide internship support?", a: "Yes, extensive internship support is provided through our industry partnerships, the career services center, and corporate collaborations." }
+                { q: "How are you preparing your students to be Industry ready?", a: "We spend at most rupees to earn a degree to make a living. We want to get a job with a professional degree as soon as possible. However, all employers look for quality in their potential employees. To do this, we provide some such requirements that make our students a contender for getting more employment than others." },
+                { q: "What quality do your students have which other college students lack?", a: "Our students have more practical knowledge as we have more developed and advanced laboratories. Our faculty members from T&P department guides the students for interview and written exam conducted by companies..." },
+                { q: "Is your college receptive to the innovation, technology, science & entrepreneurship?", a: "Is your college receptive to the innovation, technology, science & entrepreneurship?" },
+                // { q: "What is campus life like at Accurate Institute?", a: "Campus life is diverse and vibrant with 40+ student-led clubs, annual cultural fests, extensive sports events, and continuous industry interactions to keep students engaged." },
+                // { q: "What placement opportunities does Accurate Institute offer?", a: "The university boasts a dedicated placement cell with stellar track records, offering placements in top MNCs and corporations globally with packages up to ₹1.37 CR PA." },
+                // { q: "Does Accurate Institute offer scholarships?", a: "Yes, we offer up to 100% scholarships based on academic merit, entrance exam scores, and outstanding sports achievements." },
+                // { q: "Which companies recruit from Accurate Institute?", a: "Top recruiters include Tata Power, KPMG, Goldman Sachs, Deloitte, Dell, Capgemini, TCS, Microsoft, Amazon, IBM, and many more industry leaders." },
+                // { q: "Does the university provide internship support?", a: "Yes, extensive internship support is provided through our industry partnerships, the career services center, and corporate collaborations." }
             ],
             academics: [
                 { q: "What programs are offered at Accurate Institute?", a: "We offer 50+ programs across Engineering, Management, Law, Media, Liberal Arts, and Design at Undergraduate, Postgraduate, and Doctoral levels." },
