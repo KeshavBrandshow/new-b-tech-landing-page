@@ -1,0 +1,2669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accurate Institute Admissions 2026-27</title>
+    <!-- Google Fonts: Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accurate-blue': '#1B46BC',
+                        'accurate-yellow': '#FACC15',
+                        'accurate-dark-blue': '#102d7a',
+                        'card-gray': '#f4f4f4',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'cinzel': ['Cinzel', 'serif'],
+                        'bookman': ['Libre Baskerville', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            /* White background as per brand guidelines */
+        }
+
+        /* Hero Section Background */
+        main.hero-section {
+            position: relative;
+        }
+
+        main.hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background-image: url('https://image-static.collegedunia.com/public/reviewPhotos/937586/1000114120.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            /* Tone down opacity so text is readable */
+        }
+
+        .main-overlay {
+            background: linear-gradient(to right, rgba(27, 70, 188, 0.85) 0%, rgba(27, 70, 188, 0.4) 100%);
+        }
+
+        .text-shadow-strong {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .ug-pg-text {
+            line-height: 0.9;
+        }
+
+        .ampersand-circle {
+            background: #000;
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .discipline-bar {
+            border-right: 2px solid #1B46BC;
+            padding-right: 12px;
+            margin-right: 12px;
+        }
+
+        .discipline-bar:last-child {
+            border-right: none;
+        }
+
+        .card-header-tab {
+            background: #fff;
+            color: #1B46BC;
+            padding: 4px 20px;
+            border-radius: 4px 4px 0 0;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Custom Scrollbar for Programs Section */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1B46BC;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #102d7a;
+        }
+
+        /* Glassmorphism Form Styles */
+        .glass-form {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .glass-input {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .glass-input:focus {
+            background: rgba(255, 255, 255, 1);
+            border-color: #FACC15;
+            box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.2);
+            outline: none;
+        }
+
+        /* Fashion Slider Styles */
+        :root {
+            --fashion-slider-font-family: 'Poppins', sans-serif;
+            --fashion-slider-button-side-offset: 32px;
+            --fashion-slider-button-mobile-side-offset: 24px;
+            --fashion-slider-button-mobile-bottom-offset: 16px;
+            --fashion-slider-title-font-size: 80px;
+            --fashion-slider-title-line-height: 1.2;
+        }
+
+        .fashion-slider {
+            width: 100%;
+            height: 100%;
+            font-family: var(--fashion-slider-font-family)
+        }
+
+        .fashion-slider-no-transition {
+            transition-duration: 0ms !important;
+            transition-delay: 0ms !important;
+            transition-property: none !important
+        }
+
+        .fashion-slider-no-transition *:not(.swiper-wrapper) {
+            transition-duration: 0ms !important;
+            transition-delay: 0ms !important;
+            transition-property: none !important
+        }
+
+        .fashion-slider-no-transition .swiper-wrapper {
+            transition-delay: 0ms !important
+        }
+
+        .fashion-slider .swiper {
+            width: 100%;
+            height: 100%;
+            transition: 1s background-color 1.3s
+        }
+
+        .fashion-slider .swiper-wrapper {
+            transition-delay: 1s;
+            transition-timing-function: cubic-bezier(.5, 0, 0, 1)
+        }
+
+        .fashion-slider .swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .fashion-slider-title {
+            transition-delay: 1s;
+            z-index: 10
+        }
+
+        .fashion-slider-title-text {
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: #fff0;
+            -webkit-text-stroke: 2px #fff
+        }
+
+        .fashion-slider-scale {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: scale(.6);
+            transition-duration: 1s;
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+            opacity: .9;
+            overflow: hidden
+        }
+
+        .fashion-slider-scale img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.2) translate(50%);
+            transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+            transition-property: transform
+        }
+
+        .swiper-vertical .fashion-slider-scale img {
+            transform: scale(1.2) translateY(50%)
+        }
+
+        .fashion-slider-button {
+            transition: .5s;
+            outline: none;
+            position: absolute;
+            width: 140px;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer
+        }
+
+        .fashion-slider-button svg {
+            display: block;
+            transition: .5s
+        }
+
+        .fashion-slider-button .fashion-slider-svg-circle-wrap {
+            transition: .5s;
+            transform-origin: -20px 40px;
+            opacity: 1
+        }
+
+        .fashion-slider-button circle {
+            transition: .5s;
+            stroke-width: 2px;
+            stroke: #fff;
+            fill: none;
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 1;
+            transform-origin: 0px 0px 0px
+        }
+
+        .fashion-slider-button .fashion-slider-svg-arrow {
+            transition: .5s;
+            fill: #fff;
+            transform: rotateY(180deg) translate(-55px, 36.1px) scale(1.75)
+        }
+
+        .fashion-slider-button-prev {
+            left: var(--fashion-slider-button-side-offset)
+        }
+
+        .fashion-slider-button-next {
+            right: var(--fashion-slider-button-side-offset)
+        }
+
+        @media (max-width: 640px) {
+            .fashion-slider-button {
+                top: auto;
+                bottom: var(--fashion-slider-button-mobile-bottom-offset);
+                transform: none
+            }
+
+            .fashion-slider-button-prev {
+                left: var(--fashion-slider-button-mobile-side-offset)
+            }
+
+            .fashion-slider-button-next {
+                right: var(--fashion-slider-button-mobile-side-offset)
+            }
+        }
+
+        .fashion-slider-button-disabled {
+            opacity: .2;
+            cursor: default
+        }
+
+        .fashion-slider-button .fashion-slider-svg-wrap {
+            transform: translateY(353px)
+        }
+
+        .fashion-slider-button-next .fashion-slider-svg-wrap {
+            transform: translateY(353px) rotateY(180deg);
+            transform-origin: 80px 0px 0px
+        }
+
+        .fashion-slider-button .fashion-slider-svg-line {
+            transition: .5s;
+            stroke: #fff;
+            stroke-width: 2;
+            transform: translate(50px, 42px)
+        }
+
+        .fashion-slider-button-prev:not(.fashion-slider-button-disabled):hover svg {
+            transform: translate(-16px)
+        }
+
+        .fashion-slider-button-next:not(.fashion-slider-button-disabled):hover svg {
+            transform: translate(16px)
+        }
+
+        .fashion-slider-button:not(.fashion-slider-button-disabled):hover .fashion-slider-svg-circle-wrap {
+            transform: scale(1.1)
+        }
+
+        .fashion-slider-button:not(.fashion-slider-button-disabled):hover circle {
+            stroke-dasharray: 4px;
+            stroke-dashoffset: 4px;
+            opacity: 1
+        }
+
+        .fashion-slider-button:not(.fashion-slider-button-disabled):hover .fashion-slider-svg-arrow {
+            transform: rotateY(180deg) translate(-40px, 36.1px) scale(1.75)
+        }
+
+        .fashion-slider-button:not(.fashion-slider-button-disabled):hover .fashion-slider-svg-line {
+            transform: translate(35px, 42px) scaleX(.5)
+        }
+
+        .fashion-slider {
+            --fashion-slider-title-font-size: 88px
+        }
+
+        @media (max-width: 480px) {
+            .fashion-slider {
+                --fashion-slider-title-font-size: 60px
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+
+    <!-- Content Area -->
+    <main class="hero-section flex-grow flex flex-col justify-center relative min-h-[100vh] overflow-hidden">
+        <!-- Dark Blue Brand Overlay -->
+        <div class="absolute inset-0 main-overlay z-0"></div>
+
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Left Side: Hero Text -->
+                <div class="w-full">
+                    <!-- Header Logos -->
+                    <header class="flex flex-wrap items-center gap-4 mb-12">
+                        <!-- Logos can be placed here -->
+                        <div class="bg-white p-2 rounded-2xl">
+                            <img src="image/accurate-logo.webp" alt="Accurate Logo" class="w-50 h-20 ">
+                        </div>
+                        <!-- <div>
+                        <h3
+                        class="nav-text font-bookman font-extrabold text-xl md:text-2xl lg:text-xl xl:text-4xl 2xl:text-5xl font-black uppercase tracking-tight text-white leading-none">
+                        Accurate
+                    </h3>
+
+                    <h3
+                        class="logo-subtitle font-bookman font-extrabold text-xs md:text-sm lg:text-xs xl:text-xl 2xl:text-2xl font-medium text-blue-200 lg:-mt-0.5 xl:-mt-1 uppercase whitespace-nowrap">
+                        Group of Institutions
+                    </h3>
+                    </div> -->
+                    </header>
+
+                    <!-- Large Text -->
+                    <div class="">
+                        <h1 class="font-extrabold text-white ug-pg-text drop-shadow-2xl mb-5">
+                            <span class="text-[80px] md:text-[150px] lg:text-[130px]">B.Tech</span>
+                        </h1>
+
+
+                        <!-- Disciplines -->
+                        <div
+                            class="flex flex-wrap text-white font-bold text-sm md:text-lg tracking-tight leading-relaxed max-w-2xl uppercase mb-5">
+                            <span class="discipline-bar !border-white">B.Tech in Computer Science & Engineering</span>
+                            <span class="discipline-bar !border-white"> AI & ML</span>
+                            <span class="discipline-bar !border-white"> Mechanical Engineering</span>
+                            <span class="discipline-bar !border-white">Electronics & Communication</span>
+                            <!-- <span class="discipline-bar !border-white">Law</span>
+                            <span class="discipline-bar !border-white">Media</span>
+                            <span class="discipline-bar !border-white">Design</span>
+                            <span class="discipline-bar !border-white">Management</span>
+                            <span class="drop-shadow-sm">Global Pathways</span> -->
+                        </div>
+                        <h2
+                            class="text-4xl md:text-5xl lg:text-7xl font-bold text-accurate-yellow mt-2 mb-8 text-shadow-strong">
+                            ADMISSIONS OPEN 2026
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Right Side: Enquiry Form -->
+                <div class="w-full md:w-1/2 flex justify-center lg:justify-end">
+                    <div class="glass-form rounded-2xl p-6 md:p-8 w-full max-w-md">
+                        <h3 class="text-2xl font-bold text-white mb-6 text-center">Enquire Now</h3>
+                        <form action="#" class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Full Name" required
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 font-medium">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email Address" required
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 font-medium">
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="Phone Number" required
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 font-medium">
+                            </div>
+                            <div>
+                                <select required
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 font-medium appearance-none">
+                                    <option value="" disabled selected>Select Course</option>
+                                    <option value="btech-ai">B.Tech in Computer Science & Engineering</option>
+                                    <option value="btech-cs">B.Tech in Computer Science & Engineering (AI & ML)</option>
+                                    <option value="btech-me">B.Tech in Mechanical Engineering</option>
+                                    <option value="btech-ece">B.Tech in Electronics & Communication Engineering</option>
+                                    <!-- <option value="mba">MBA</option>
+                                    <option value="law">Law</option> -->
+                                </select>
+                            </div>
+                            <div>
+                                <textarea placeholder="Your Message" rows="3"
+                                    class="glass-input w-full px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 font-medium"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-accurate-yellow text-accurate-blue font-extrabold py-4 rounded-lg hover:bg-yellow-400 transition transform hover:scale-[1.02] active:scale-[0.98] shadow-lg text-lg uppercase tracking-wider">
+                                Submit Enquiry
+                            </button>
+                        </form>
+                        <p class="text-white text-[10px] text-center mt-4 opacity-80 leading-tight">
+                            By clicking submit, you agree to our privacy policy and to receive communications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Why Accurate Institute Section -->
+    <section class="bg-white w-full shadow-2xl rounded-sm overflow-hidden z-10 relative">
+        <!-- Top Announcement Bar -->
+        <div class="max-w-7xl mx-auto px-4 py-8 md:py-12"
+            class="bg-white py-2 px-4 text-xs md:text-sm flex justify-between items-center overflow-hidden w-full z-20 border-b border-gray-100">
+            <div class="flex items-center flex-1 overflow-hidden pr-4">
+                <span class="text-accurate-blue font-bold uppercase shrink-0 z-10 bg-white pr-2">Announcement</span>
+                <marquee class="text-gray-800 font-medium flex-1" scrollamount="5"> • Dear Student, Join our LIVE
+                    Webinar on Effective Communication scheduled on 16th February at 6:00 PM to 7:00 PM. Enhance your
+                    presentation and interview skills with expert guidance. <span
+                        class="text-gray-800 font-medium flex-1" scrollamount="5"> M.Tech Admissions Open 2026.</span>
+                </marquee>
+
+                <a href="#" `
+                    class="bg-accurate-yellow text-accurate-blue font-bold px-4 py-3 rounded text-xs hover:bg-yellow-500 transition shrink-0 z-10">Apply
+                    Now</a>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-accurate-blue text-center uppercase mb-8 md:mb-10">
+                Performance at a Glance</h2>
+
+            <div
+                class="flex flex-wrap justify-center items-stretch divide-y md:divide-y-0 md:divide-x divide-gray-300 ">
+                <!-- Stat 1 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight">₹1.30</div>
+                    <div class="text-xl md:text-2xl font-extrabold text-accurate-dark-blue leading-tight mb-2">CR. PA
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium text-center mb-1">Highest International
+                        Package</div>
+                    <div
+                        class="text-[16px] md:text-sm text-gray-500 font-medium text-center font-bold text-accurate-blue">
+                        <mark class="bg-accurate-yellow text-accurate-dark-blue px-2 py-0.5 rounded">SAAS Group
+                            Dubai</mark>
+                    </div>
+                </div>
+
+
+                <!-- Stat 2 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight">₹17</div>
+                    <div class="text-xl md:text-2xl font-extrabold text-accurate-dark-blue leading-tight mb-2">Lakhs
+                        PA
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium text-center">Highest Domestic
+                        Package</div>
+                </div>
+                <!-- Stat 5 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight">₹7</div>
+                    <div class="text-xl md:text-2xl font-extrabold text-accurate-dark-blue leading-tight mb-2">Lakhs
+                        PA
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium text-center"> Average
+                        Package</div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">550+
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">
+                        Recruiters</div>
+                </div>
+
+                <!-- Stat 4 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">100%
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">
+                        Placement <br>
+                        Assurance</div>
+                </div>
+
+                <!-- Stat 5 -->
+                <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">1200+
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">Companies
+                        for<br>Placement</div>
+                </div>
+
+                <!-- Stat 6 -->
+                <!-- <div
+                    class="w-full md:w-auto px-2 md:px-6 py-4 md:py-0 flex flex-col items-center justify-start flex-1 min-w-[140px]">
+                    <div class="text-3xl md:text-4xl font-extrabold text-accurate-dark-blue tracking-tight mb-2">10+
+                    </div>
+                    <div class="text-[13px] md:text-sm text-gray-500 font-medium leading-snug text-center">Days
+                        Global<br>Immersion Program<br>Across 5 Countries</div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- B.Tech Specializations Fashion Slider -->
+    <section
+        class="w-full relative py-12 md:py-16 bg-[#F0F4FF] overflow-hidden shadow-inner bg-gradient-to-b from-[#F0F4FF] to-white"
+        id="specializations">
+        <div class="max-w-7xl mx-auto px-4 mb-8 relative z-10 flex flex-col md:flex-row justify-between items-end">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-accurate-blue uppercase mb-2 drop-shadow-sm">
+                    B.Tech Specializations</h2>
+                <p class="text-sm text-gray-600 font-medium">Explore our industry-oriented B.Tech programmes tailored
+                    for modern tech excellence.</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10 h-[500px] md:h-[600px]">
+            <!-- Fashion slider container -->
+            <div
+                class="fashion-slider rounded-2xl overflow-hidden shadow-2xl relative w-full h-full border-[6px] border-white">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide flex flex-col md:flex-row items-center justify-between px-10 md:px-24 gap-8"
+                            data-slide-bg-color="#1B46BC">
+                            <div class="w-full md:w-1/2 flex flex-col justify-center items-start text-left z-20"
+                                data-swiper-parallax="-130%">
+                                <div class="fashion-slider-title !relative">
+                                    <div class="fashion-slider-title-text text-[35px] md:text-[50px] lg:text-[70px] leading-[1.1] font-poppins text-left"
+                                        style="white-space: normal;">Computer Science<br>& Engineering</div>
+                                </div>
+                                <p
+                                    class="text-white text-sm md:text-base mt-2 font-medium max-w-lg drop-shadow-md mb-2">
+                                    Master the fundamentals of computing, software development, and modern technologies
+                                    to build the future of tech.
+                                </p>
+                                <button
+                                    class="mt-4 px-8 py-3 bg-white text-[#1B46BC] font-bold rounded-full shadow-lg hover:bg-gray-100 transition-transform hover:scale-105">Explore
+                                    Program</button>
+                            </div>
+                            <div
+                                class="w-full md:w-1/2 h-[50%] md:h-[80%] relative z-10 flex justify-center items-center">
+                                <div class="fashion-slider-scale rounded-2xl shadow-2xl overflow-hidden"
+                                    style="position: relative; width: 100%; height: 100%;">
+                                    <img src="https://www.accurate.in/engg/img/classrooms/classroom4.webp" alt="CSE">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide flex flex-col md:flex-row items-center justify-between px-10 md:px-24 gap-8"
+                            data-slide-bg-color="#FACC15">
+                            <div class="w-full md:w-1/2 flex flex-col justify-center items-start text-left z-20"
+                                data-swiper-parallax="-130%">
+                                <div class="fashion-slider-title !relative">
+                                    <div class="fashion-slider-title-text text-[35px] md:text-[50px] lg:text-[70px] leading-[1.1] font-poppins text-left"
+                                        style="white-space: normal;">CSE<br>(AI & ML)</div>
+                                </div>
+                                <p
+                                    class="text-white text-sm md:text-base mt-2 font-medium max-w-lg drop-shadow-md text-shadow mb-2">
+                                    Dive into the world of Artificial Intelligence and Machine Learning to create smart,
+                                    data-driven solutions.
+                                </p>
+                                <button
+                                    class="mt-4 px-8 py-3 bg-white text-[#b5920b] font-bold rounded-full shadow-lg hover:bg-gray-100 transition-transform hover:scale-105">Explore
+                                    Program</button>
+                            </div>
+                            <div
+                                class="w-full md:w-1/2 h-[50%] md:h-[80%] relative z-10 flex justify-center items-center">
+                                <div class="fashion-slider-scale rounded-2xl shadow-2xl overflow-hidden"
+                                    style="position: relative; width: 100%; height: 100%;">
+                                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
+                                        alt="AI ML">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide flex flex-col md:flex-row items-center justify-between px-10 md:px-24 gap-8"
+                            data-slide-bg-color="#102d7a">
+                            <div class="w-full md:w-1/2 flex flex-col justify-center items-start text-left z-20"
+                                data-swiper-parallax="-130%">
+                                <div class="fashion-slider-title !relative">
+                                    <div class="fashion-slider-title-text text-[35px] md:text-[50px] lg:text-[70px] leading-[1.1] font-poppins text-left"
+                                        style="white-space: normal;">Mechanical<br>Engineering</div>
+                                </div>
+                                <p
+                                    class="text-white text-sm md:text-base mt-2 font-medium max-w-lg drop-shadow-md mb-2">
+                                    Design, analyze, and manufacture cutting-edge mechanical systems shaping the future
+                                    of industries.
+                                </p>
+                                <button
+                                    class="mt-4 px-8 py-3 bg-white text-[#102d7a] font-bold rounded-full shadow-lg hover:bg-gray-100 transition-transform hover:scale-105">Explore
+                                    Program</button>
+                            </div>
+                            <div
+                                class="w-full md:w-1/2 h-[50%] md:h-[80%] relative z-10 flex justify-center items-center">
+                                <div class="fashion-slider-scale rounded-2xl shadow-2xl overflow-hidden"
+                                    style="position: relative; width: 100%; height: 100%;">
+                                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000"
+                                        alt="Mechanical">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide flex flex-col md:flex-row items-center justify-between px-10 md:px-24 gap-8"
+                            data-slide-bg-color="#4B5563">
+                            <div class="w-full md:w-1/2 flex flex-col justify-center items-start text-left z-20"
+                                data-swiper-parallax="-130%">
+                                <div class="fashion-slider-title !relative">
+                                    <div class="fashion-slider-title-text text-[35px] md:text-[50px] lg:text-[70px] leading-[1.1] font-poppins text-left"
+                                        style="white-space: normal;">Electronics &<br>Communication</div>
+                                </div>
+                                <p
+                                    class="text-white text-sm md:text-base mt-2 font-medium max-w-lg drop-shadow-md mb-2">
+                                    Pioneer advancements in core electronics, embedded systems, and modern communication
+                                    networks.
+                                </p>
+                                <button
+                                    class="mt-4 px-8 py-3 bg-white text-[#4B5563] font-bold rounded-full shadow-lg hover:bg-gray-100 transition-transform hover:scale-105">Explore
+                                    Program</button>
+                            </div>
+                            <div
+                                class="w-full md:w-1/2 h-[50%] md:h-[80%] relative z-10 flex justify-center items-center">
+                                <div class="fashion-slider-scale rounded-2xl shadow-2xl overflow-hidden"
+                                    style="position: relative; width: 100%; height: 100%;">
+                                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abf0ceea?auto=format&fit=crop&q=80&w=2000"
+                                        alt="ECE">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- left/previous navigation button -->
+                    <div class="fashion-slider-button-prev fashion-slider-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
+                            <g class="fashion-slider-svg-wrap">
+                                <g class="fashion-slider-svg-circle-wrap">
+                                    <circle cx="42" cy="42" r="40"></circle>
+                                </g>
+                                <path class="fashion-slider-svg-arrow"
+                                    d="M.983,6.929,4.447,3.464.983,0,0,.983,2.482,3.464,0,5.946Z"></path>
+                                <path class="fashion-slider-svg-line" d="M80,0H0"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <!-- right/next navigation button -->
+                    <div class="fashion-slider-button-next fashion-slider-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
+                            <g class="fashion-slider-svg-wrap">
+                                <g class="fashion-slider-svg-circle-wrap">
+                                    <circle cx="42" cy="42" r="40"></circle>
+                                </g>
+                                <path class="fashion-slider-svg-arrow"
+                                    d="M.983,6.929,4.447,3.464.983,0,0,.983,2.482,3.464,0,5.946Z"></path>
+                                <path class="fashion-slider-svg-line" d="M80,0H0"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excellence in Every Stat Section -->
+    <section class="bg-[#F0F4FF] w-full py-12 md:py-16 mt-4">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-accurate-blue text-center uppercase mb-10">Why accurate
+            </h2>
+
+            <div class="flex flex-col gap-6 w-full max-w-[950px] mx-auto">
+                <!-- Top Row: 5 Cards -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                    <!-- Stat 1 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">16</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">
+                            Acres<br>Lush Green<br>Campus</div>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">10,000+</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">Students
+                        </div>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">500+</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">
+                            Hostel<br>Capacity</div>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">10+</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">
+                            Sports<br>Facilities</div>
+                    </div>
+                    <!-- Stat 5 -->
+                    <!-- <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">90%+</div>
+                        <div class="text-xs md:text-sm text-gray-600 font-medium text-center leading-tight">Ph.D.
+                            Faculty</div>
+                    </div> -->
+                </div>
+
+                <!-- Bottom Row: 4 Cards -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 max-w-[800px] mx-auto w-full">
+                    <!-- Stat 6 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-2xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight text-center">
+                            25+<br><span
+                                class="text-[12px] md:text-sm text-gray-600 font-medium tracking-normal leading-tight">Diploma,
+                                UG,
+                                PG &<br>Programs</span></div>
+                    </div>
+                    <!-- Stat 7 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight text-center">
+                            25+<br><span
+                                class="text-[12px] md:text-sm text-gray-600 font-medium tracking-normal leading-tight">Corporate<br>Collaborations</span>
+                        </div>
+                    </div>
+                    <!-- Stat 8 -->
+                    <!-- <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div
+                            class="flex items-center text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">
+                            ₹125<br>Cr+</div>
+                        <div class="text-[12px] md:text-sm text-gray-600 font-medium text-center leading-tight">Funds
+                            Raised<br>by Startups</div>
+                    </div> -->
+                    <!-- Stat 9 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center min-w-[150px] flex-1">
+                        <div class="text-3xl md:text-3xl font-black text-gray-900 mb-1 tracking-tight">20+</div>
+                        <div class="text-[12px] md:text-sm text-gray-600 font-medium text-center leading-tight">
+                            Student-Led<br>Clubs &<br>Societies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ranking and Awards Section -->
+    <section class="bg-white w-full py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-accurate-blue text-center uppercase mb-10">Ranking &
+                Awards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ranked 1 -->
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        2025
+                    </div>
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">Ranked
+                        A+++ Best
+                        B-School in India</h3>
+                    <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">Business
+                            India survey 2025</p>
+                    </div>
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+                <!-- Ranked 2-->
+
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        2025
+                    </div>
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">
+                        Awarded Excellence In Management Education Award</h3>
+                    <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">Times now </p>
+                    </div>
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+                <!-- Ranked 3-->
+
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        2025
+                    </div>
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">
+                        The Most Admired Law Colleges for Academic Excellence in India</h3>
+                    <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">Prime Insights
+                        </p>
+                    </div>
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+                <!-- Ranked 4-->
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        2024
+                    </div>
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">Ranked
+                        # A+ Top 20
+                        B-School in India</h3>
+                    <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">Silicon
+                            India </p>
+                    </div>
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+                <!--Ranked 5-->
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        2024
+                    </div>
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">Ranked
+                        # A+++
+                        B-School</h3>
+                    <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">Business
+                            India survey 2024 </p>
+                    </div>
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+                <!--Ranked 6-->
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        2024
+                    </div>
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">
+                        CSR Excellence in Education Award</h3>
+                    <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">CSR</p>
+                    </div>
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+
+                <!-- Ranked 7-->
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        2023
+                    </div>
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">
+                        Best Institute with Excellent Placement record of the year</h3>
+                    <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">Topnotch
+                            Foundation </p>
+                    </div>
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+
+                <!-- Ranked 8-->
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        2023
+                    </div>
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">
+                        Awarded Excellence in Management Education in North India</h3>
+                    <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">PJagran Josh
+                        </p>
+                    </div>
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+
+                <!-- Ranked 9-->
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <!-- <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        -
+                    </div> -->
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">Ranked
+                        AAA+
+                        Institute In U.P</h3>
+                    <!-- <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">- </p>
+                    </div> -->
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+
+                <!-- Ranked 10 -->
+
+                <div
+                    class="relative flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group h-full">
+                    <!-- <div class="absolute top-6 right-6 text-gray-400 font-extrabold text-sm uppercase tracking-wider">
+                        -
+                    </div> -->
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Ranked As</p>
+                    <h3 class="text-accurate-blue font-bold text-xl md:text-xl leading-tight mb-4 flex-grow">Excellence
+                        in Management Education in North India</h3>
+                    <!-- <div class="w-full mt-auto flex justify-between">
+                        <p class="text-[12px] font-bold text-gray-500 uppercase tracking-wider mb-3">Awarded By </p>
+                        <p class="text-[12px] font-bold text-accurate-blue uppercase tracking-wider mb-3">- </p>
+                    </div> -->
+                    <div class="w-16 h-0.5 bg-accurate-blue group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+
+                </div>
+
+
+
+                <!-- Award 2 -->
+                <!-- <div
+                    class="flex flex-col items-start p-6 border-b-2 border-accurate-blue/10 hover:border-accurate-blue transition-colors group">
+                    <p class="text-accurate-blue font-bold text-xs uppercase tracking-widest mb-2">Awarded As</p>
+                    <h3 class="text-accurate-blue font-extrabold text-xl md:text-xl leading-tight">Excellence In
+                        Management Education In North India</h3>
+                    <div
+                        class="w-16 h-0.5 bg-accurate-blue mt-4 group-hover:w-full transition-all duration-300 opacity-30">
+                    </div>
+                </div> -->
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognitions Section (Light High Impact) -->
+    <section class=" max-h-[70vh] w-full py-16 md:py-15 bg-[#f7f7f7] relative overflow-hidden">
+        <!-- Subtle Pattern Overlay -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <pattern id="grid-pattern-light" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#1B46BC" stroke-width="0.3" />
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid-pattern-light)" />
+            </svg>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Award Card 1 -->
+                <div
+                    class="bg-white p-5 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-blue-50 group hover:scale-[1.01] h-[180px]">
+
+                    <p class="text-accurate-blue/60 font-bold text-sm uppercase tracking-[0.3em] mb-6">Awarded as</p>
+                    <h3 class="text-accurate-blue font-black text-2xl md:text-3xl lg:text-3xl xl:text-3xl">
+                        Top Engineering College of Computer Science
+                    </h3>
+                    <div class="w-20 h-1 bg-accurate-yellow mt-5 group-hover:w-full transition-all duration-700"></div>
+                </div>
+
+                <!-- Award Card 2 -->
+                <div
+                    class="bg-white p-5 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-blue-50 group hover:scale-[1.01] h-[180px]">
+
+                    <p class="text-accurate-blue/60 font-bold text-sm uppercase tracking-[0.3em] mb-6">Awarded as</p>
+                    <h3 class="text-accurate-blue font-black text-2xl md:text-3xl lg:text-3xl xl:text-3xl">
+                        Top Private Institute In North India
+                    </h3>
+                    <div class="w-20 h-1 bg-accurate-yellow mt-5 group-hover:w-full transition-all duration-700"></div>
+                </div>
+
+                <!-- Award Card 3 -->
+                <div
+                    class="bg-white p-5 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-blue-50 group hover:scale-[1.01] h-[180px]">
+                    <p class="text-accurate-blue/60 font-bold text-sm uppercase tracking-[0.3em] mb-6">Awarded as</p>
+                    <h3 class="text-accurate-blue font-black text-2xl md:text-3xl lg:text-3xl xl:text-3xl">
+                        Best Engineering Institute in Delhi / NCR
+                    </h3>
+                    <div class="w-20 h-1 bg-accurate-yellow mt-5 group-hover:w-full transition-all duration-700"></div>
+                </div>
+
+                <!-- Award Card 4 -->
+                <div
+                    class="bg-white p-5 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-blue-50 group hover:scale-[1.01] h-[180px]">
+                    <p class="text-accurate-blue/60 font-bold text-sm uppercase tracking-[0.3em] mb-6">Awarded as</p>
+                    <h3 class="text-accurate-blue font-black text-2xl md:text-3xl lg:text-3xl xl:text-3xl">
+                        Top Institute <br>of India
+                    </h3>
+                    <div class="w-20 h-1 bg-accurate-yellow mt-5 group-hover:w-full transition-all duration-700"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Lab Section -->
+    <section class="w-full py-16 md:py-24 bg-white relative overflow-hidden">
+        <!-- Abstract Decorative Background -->
+        <div
+            class="absolute top-0 right-0 w-1/3 h-full bg-accurate-blue/5 skew-x-12 transform origin-top-right pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <!-- Text Content -->
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <div
+                        class="inline-flex items-center gap-3 bg-accurate-blue/10 px-4 py-2 rounded-full mb-6 border border-accurate-blue/20">
+                        <div class="w-2 h-2 rounded-full bg-accurate-blue animate-pulse"></div>
+                        <span class="text-accurate-blue font-bold uppercase tracking-widest text-xs">Innovation
+                            Center</span>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-black text-accurate-dark-blue leading-tight mb-6">
+                        Artificial<br><span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-accurate-blue to-accurate-yellow">Intelligence
+                            Lab</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Step into the future with our state-of-the-art AI facility. Equipped with high-performance
+                        computational clusters and modern software stacks, our lab enables students to architect deep
+                        learning models, natural language processors, and intelligent predictive algorithms.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4 text-gray-800 font-bold">
+                            <div
+                                class="w-8 h-8 rounded bg-accurate-yellow/20 text-accurate-dark-blue flex items-center justify-center shrink-0">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            Advanced GPU Workstations
+                        </li>
+                        <li class="flex items-center gap-4 text-gray-800 font-bold">
+                            <div
+                                class="w-8 h-8 rounded bg-accurate-yellow/20 text-accurate-dark-blue flex items-center justify-center shrink-0">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            Machine Learning Toolkits
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Eye-Catching Image Card -->
+                <div class="w-full md:w-1/2 order-1 md:order-2 relative">
+                    <!-- Offset Border -->
+                    <div
+                        class="absolute inset-0 border-4 border-accurate-yellow translate-x-4 translate-y-4 rounded-3xl -z-10">
+                    </div>
+                    <!-- Main Card -->
+                    <div
+                        class="rounded-3xl overflow-hidden shadow-2xl relative group bg-white border border-gray-100 h-[400px] md:h-[500px]">
+
+                        <!-- Improved Image Slider Container (Stacked Cards Design) -->
+                        <div
+                            class="relative w-full h-full overflow-hidden bg-white ai-stacked-container perspective-1000">
+                            <!-- Helper Container for positioning -->
+                            <div class="absolute inset-0 w-full h-full flex items-center justify-center p-6">
+
+                                <!-- Slider Track -->
+                                <div class="relative w-full h-full max-h-[350px] md:max-h-[420px] ai-stacked-track">
+
+                                    <!-- Slide 1 -->
+                                    <div class="absolute inset-0 w-full h-full rounded-2xl shadow-xl overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] origin-bottom ai-stacked-slide ai-active-slide z-30"
+                                        data-index="0">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10">
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop"
+                                            alt="Artificial Intelligence Lab 1"
+                                            class="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105" />
+                                        <div class="absolute bottom-4 left-4 z-20 text-white">
+                                            <p class="font-bold text-lg md:text-xl drop-shadow-md">Advanced Computing
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 2 -->
+                                    <div class="absolute inset-0 w-full h-full rounded-2xl shadow-xl overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] origin-bottom ai-stacked-slide translate-x-4 -translate-y-4 scale-[0.9] opacity-80 z-20"
+                                        data-index="1">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10">
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
+                                            alt="Artificial Intelligence Lab 2"
+                                            class="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105" />
+                                        <div
+                                            class="absolute bottom-4 left-4 z-20 text-white opacity-0 transition-opacity duration-300 slide-text">
+                                            <p class="font-bold text-lg md:text-xl drop-shadow-md">Robotics Integration
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 -->
+                                    <div class="absolute inset-0 w-full h-full rounded-2xl shadow-xl overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] origin-bottom ai-stacked-slide translate-x-8 -translate-y-8 scale-[0.8] opacity-60 z-10"
+                                        data-index="2">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10">
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop"
+                                            alt="Artificial Intelligence Lab 3"
+                                            class="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105" />
+                                        <div
+                                            class="absolute bottom-4 left-4 z-20 text-white opacity-0 transition-opacity duration-300 slide-text">
+                                            <p class="font-bold text-lg md:text-xl drop-shadow-md">Data Analytics</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Minimal Arrow Controls (Bottom Right) -->
+                        <div
+                            class="absolute bottom-6 right-6 flex gap-3 z-40 bg-white/80 backdrop-blur-md p-2 rounded-full shadow-lg border border-white/50">
+                            <button
+                                class="w-8 h-8 rounded-full bg-accurate-blue text-white flex items-center justify-center hover:bg-accurate-dark-blue transition-colors ai-stack-prev"
+                                aria-label="Previous">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-accurate-blue text-white flex items-center justify-center hover:bg-accurate-dark-blue transition-colors ai-stack-next"
+                                aria-label="Next">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <style>
+                            .perspective-1000 {
+                                perspective: 1000px;
+                            }
+                        </style>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const slides = Array.from(document.querySelectorAll('.ai-stacked-slide'));
+                                const prevBtn = document.querySelector('.ai-stack-prev');
+                                const nextBtn = document.querySelector('.ai-stack-next');
+                                if (slides.length === 0) return;
+
+                                let currentIndex = 0;
+                                const totalSlides = slides.length;
+                                let autoPlayInterval;
+
+                                // States for the 3 visible positions (Active, Next, Last)
+                                const states = [
+                                    { transform: 'translate(0px, 0px) scale(1)', opacity: '1', zIndex: '30' },
+                                    { transform: 'translate(16px, -16px) scale(0.9)', opacity: '0.8', zIndex: '20' },
+                                    { transform: 'translate(32px, -32px) scale(0.8)', opacity: '0.6', zIndex: '10' }
+                                ];
+
+                                // Hidden state for slides that move out
+                                const hiddenStateLeft = { transform: 'translate(-100%, 50px) scale(1) rotate(-10deg)', opacity: '0', zIndex: '40' };
+                                const hiddenStateRight = { transform: 'translate(100%, -50px) scale(0.5)', opacity: '0', zIndex: '0' };
+
+                                function updateSlides() {
+                                    slides.forEach((slide, i) => {
+                                        const textEl = slide.querySelector('.slide-text');
+                                        // Calculate distance from current active index
+                                        // Handle wrap-around
+                                        let offset = (i - currentIndex) % totalSlides;
+                                        if (offset < 0) offset += totalSlides;
+
+                                        // Apply state based on offset
+                                        let targetState;
+                                        if (offset === 0) {
+                                            // Active slide
+                                            targetState = states[0];
+                                            slide.classList.add('ai-active-slide');
+                                            slide.classList.remove('pointer-events-none');
+                                            if (textEl) textEl.classList.replace('opacity-0', 'opacity-100');
+                                        } else if (offset === 1 && totalSlides > 1) {
+                                            // 2nd slide in stack
+                                            targetState = states[1];
+                                            slide.classList.remove('ai-active-slide');
+                                            slide.classList.add('pointer-events-none');
+                                            if (textEl) textEl.classList.replace('opacity-100', 'opacity-0');
+                                        } else if (offset === 2 && totalSlides > 2) {
+                                            // 3rd slide in stack
+                                            targetState = states[2];
+                                            slide.classList.remove('ai-active-slide');
+                                            slide.classList.add('pointer-events-none');
+                                            if (textEl) textEl.classList.replace('opacity-100', 'opacity-0');
+                                        } else {
+                                            // Hide others (push to the back)
+                                            targetState = hiddenStateRight;
+                                            slide.classList.remove('ai-active-slide');
+                                            slide.classList.add('pointer-events-none');
+                                            if (textEl) textEl.classList.replace('opacity-100', 'opacity-0');
+                                        }
+
+                                        // Briefly animate outgoing slide differently if needed
+                                        // For simplicity, we just snap them to their new offset positions
+                                        slide.style.transform = targetState.transform;
+                                        slide.style.opacity = targetState.opacity;
+                                        slide.style.zIndex = targetState.zIndex;
+                                    });
+                                }
+
+                                function nextSlide() {
+                                    // Make current slide fly out left before index updates
+                                    const currentEl = slides[currentIndex];
+                                    currentEl.style.transform = hiddenStateLeft.transform;
+                                    currentEl.style.opacity = hiddenStateLeft.opacity;
+
+                                    // Update index and reset stack slightly delayed
+                                    setTimeout(() => {
+                                        currentIndex = (currentIndex + 1) % totalSlides;
+                                        updateSlides();
+                                    }, 200); // Small delay creates a "pulling out a card" feel
+                                }
+
+                                function prevSlide() {
+                                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                                    // Make the incoming slide fly in from the left
+                                    const incomingEl = slides[currentIndex];
+                                    incomingEl.style.transform = hiddenStateLeft.transform;
+                                    incomingEl.style.opacity = hiddenStateLeft.opacity;
+
+                                    // Force reflow
+                                    void incomingEl.offsetWidth;
+
+                                    updateSlides();
+                                }
+
+                                function resetTimer() {
+                                    clearInterval(autoPlayInterval);
+                                    autoPlayInterval = setInterval(nextSlide, 4000);
+                                }
+
+                                if (nextBtn) {
+                                    nextBtn.addEventListener('click', () => {
+                                        nextSlide();
+                                        resetTimer();
+                                    });
+                                }
+
+                                if (prevBtn) {
+                                    prevBtn.addEventListener('click', () => {
+                                        prevSlide();
+                                        resetTimer();
+                                    });
+                                }
+
+                                // Initial Setup
+                                updateSlides();
+                                resetTimer();
+                            });
+                        </script>
+
+                        <!-- Floating Glass Badge -->
+                        <div
+                            class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md border border-white/40 shadow-xl rounded-2xl p-4 flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-accurate-blue text-white rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase font-bold text-gray-500 tracking-wider">Facility Type
+                                </p>
+                                <p class="text-sm font-black text-accurate-dark-blue uppercase">Smart Computing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Drone Lab Section -->
+    <section class="w-full py-16 md:py-24 bg-[#F8FAFF] relative overflow-hidden border-t border-b border-gray-100">
+        <!-- Abstract Decorative Background -->
+        <div
+            class="absolute top-1/2 left-0 w-1/4 h-1/2 bg-accurate-yellow/10 rounded-full blur-3xl transform -translate-y-1/2 pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+
+                <!-- Eye-Catching Image Card Slider (Left Side) -->
+                <div class="w-full md:w-1/2 relative">
+                    <!-- Offset Border -->
+                    <div
+                        class="absolute inset-0 border-4 border-accurate-blue -translate-x-4 translate-y-4 rounded-3xl -z-10">
+                    </div>
+                    <!-- Main Card -->
+                    <div
+                        class="rounded-3xl overflow-hidden shadow-2xl relative group bg-white border border-gray-100 h-[400px] md:h-[500px]">
+
+                        <!-- Improved Image Slider Container (Stacked Cards Design) -->
+                        <div
+                            class="relative w-full h-full overflow-hidden bg-white drone-stacked-container perspective-1000">
+                            <!-- Helper Container for positioning -->
+                            <div class="absolute inset-0 w-full h-full flex items-center justify-center p-6">
+
+                                <!-- Slider Track -->
+                                <div class="relative w-full h-full max-h-[350px] md:max-h-[420px] drone-stacked-track">
+
+                                    <!-- Slide 1 -->
+                                    <div class="absolute inset-0 w-full h-full rounded-2xl shadow-xl overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] origin-bottom drone-stacked-slide drone-active-slide z-30"
+                                        data-index="0">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10">
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop"
+                                            alt="UAV & Drone Lab 1"
+                                            class="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105" />
+                                        <div class="absolute bottom-4 left-4 z-20 text-white">
+                                            <p class="font-bold text-lg md:text-xl drop-shadow-md">Aerospace Tech</p>
+                                        </div>
+                                        <!-- Floating Glass Badge on first slide -->
+                                        <div
+                                            class="absolute top-6 right-6 bg-accurate-dark-blue/80 backdrop-blur-md border border-white/10 shadow-xl rounded-2xl p-2 md:p-3 flex items-center gap-3 z-20 scale-90 md:scale-100 origin-top-right transition-opacity duration-300 slide-badge">
+                                            <div
+                                                class="w-10 h-10 md:w-12 md:h-12 bg-accurate-yellow text-accurate-dark-blue rounded-full flex items-center justify-center shrink-0">
+                                                <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="text-left hidden sm:block">
+                                                <p
+                                                    class="text-[9px] md:text-[10px] uppercase font-bold text-gray-300 tracking-wider">
+                                                    Facility Type</p>
+                                                <p
+                                                    class="text-xs md:text-sm font-black text-white uppercase leading-tight">
+                                                    Innovation Hub</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 2 -->
+                                    <div class="absolute inset-0 w-full h-full rounded-2xl shadow-xl overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] origin-bottom drone-stacked-slide translate-x-4 -translate-y-4 scale-[0.9] opacity-80 z-20"
+                                        data-index="1">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10">
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88?q=80&w=1000&auto=format&fit=crop"
+                                            alt="UAV & Drone Lab 2"
+                                            class="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105" />
+                                        <div
+                                            class="absolute bottom-4 left-4 z-20 text-white opacity-0 transition-opacity duration-300 slide-text">
+                                            <p class="font-bold text-lg md:text-xl drop-shadow-md">Flight Simulation</p>
+                                        </div>
+                                        <div
+                                            class="absolute top-6 right-6 bg-accurate-dark-blue/80 backdrop-blur-md border border-white/10 shadow-xl rounded-2xl p-2 md:p-3 flex items-center gap-3 z-20 scale-90 md:scale-100 origin-top-right opacity-0 transition-opacity duration-300 slide-badge">
+                                            <div
+                                                class="w-10 h-10 md:w-12 md:h-12 bg-accurate-yellow text-accurate-dark-blue rounded-full flex items-center justify-center shrink-0">
+                                                <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="text-left hidden sm:block">
+                                                <p
+                                                    class="text-[9px] md:text-[10px] uppercase font-bold text-gray-300 tracking-wider">
+                                                    Facility Type</p>
+                                                <p
+                                                    class="text-xs md:text-sm font-black text-white uppercase leading-tight">
+                                                    Innovation Hub</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 -->
+                                    <div class="absolute inset-0 w-full h-full rounded-2xl shadow-xl overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] origin-bottom drone-stacked-slide translate-x-8 -translate-y-8 scale-[0.8] opacity-60 z-10"
+                                        data-index="2">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10">
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1508614589041-895b60098df9?q=80&w=1000&auto=format&fit=crop"
+                                            alt="UAV & Drone Lab 3"
+                                            class="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105" />
+                                        <div
+                                            class="absolute bottom-4 left-4 z-20 text-white opacity-0 transition-opacity duration-300 slide-text">
+                                            <p class="font-bold text-lg md:text-xl drop-shadow-md">Hardware Prototyping
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="absolute top-6 right-6 bg-accurate-dark-blue/80 backdrop-blur-md border border-white/10 shadow-xl rounded-2xl p-2 md:p-3 flex items-center gap-3 z-20 scale-90 md:scale-100 origin-top-right opacity-0 transition-opacity duration-300 slide-badge">
+                                            <div
+                                                class="w-10 h-10 md:w-12 md:h-12 bg-accurate-yellow text-accurate-dark-blue rounded-full flex items-center justify-center shrink-0">
+                                                <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="text-left hidden sm:block">
+                                                <p
+                                                    class="text-[9px] md:text-[10px] uppercase font-bold text-gray-300 tracking-wider">
+                                                    Facility Type</p>
+                                                <p
+                                                    class="text-xs md:text-sm font-black text-white uppercase leading-tight">
+                                                    Innovation Hub</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Minimal Arrow Controls (Bottom Right) -->
+                        <div
+                            class="absolute bottom-6 right-6 flex gap-3 z-40 bg-white/80 backdrop-blur-md p-2 rounded-full shadow-lg border border-white/50">
+                            <button
+                                class="w-8 h-8 rounded-full bg-accurate-yellow text-accurate-dark-blue flex items-center justify-center hover:bg-yellow-500 transition-colors drone-stack-prev"
+                                aria-label="Previous">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-accurate-yellow text-accurate-dark-blue flex items-center justify-center hover:bg-yellow-500 transition-colors drone-stack-next"
+                                aria-label="Next">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const slides = Array.from(document.querySelectorAll('.drone-stacked-slide'));
+                                const prevBtn = document.querySelector('.drone-stack-prev');
+                                const nextBtn = document.querySelector('.drone-stack-next');
+                                if (slides.length === 0) return;
+
+                                let currentIndex = 0;
+                                const totalSlides = slides.length;
+                                let autoPlayInterval;
+
+                                // States for the 3 visible positions (Active, Next, Last)
+                                const states = [
+                                    { transform: 'translate(0px, 0px) scale(1)', opacity: '1', zIndex: '30' },
+                                    { transform: 'translate(16px, -16px) scale(0.9)', opacity: '0.8', zIndex: '20' },
+                                    { transform: 'translate(32px, -32px) scale(0.8)', opacity: '0.6', zIndex: '10' }
+                                ];
+
+                                // Hidden state for slides that move out
+                                const hiddenStateLeft = { transform: 'translate(-100%, 50px) scale(1) rotate(-10deg)', opacity: '0', zIndex: '40' };
+                                const hiddenStateRight = { transform: 'translate(100%, -50px) scale(0.5)', opacity: '0', zIndex: '0' };
+
+                                function updateSlides() {
+                                    slides.forEach((slide, i) => {
+                                        const textEl = slide.querySelector('.slide-text');
+                                        const badgeEl = slide.querySelector('.slide-badge');
+                                        // Calculate distance from current active index
+                                        // Handle wrap-around
+                                        let offset = (i - currentIndex) % totalSlides;
+                                        if (offset < 0) offset += totalSlides;
+
+                                        // Apply state based on offset
+                                        let targetState;
+                                        if (offset === 0) {
+                                            // Active slide
+                                            targetState = states[0];
+                                            slide.classList.add('drone-active-slide');
+                                            slide.classList.remove('pointer-events-none');
+                                            if (textEl) textEl.classList.replace('opacity-0', 'opacity-100');
+                                            if (badgeEl) badgeEl.classList.replace('opacity-0', 'opacity-100');
+                                        } else if (offset === 1 && totalSlides > 1) {
+                                            // 2nd slide in stack
+                                            targetState = states[1];
+                                            slide.classList.remove('drone-active-slide');
+                                            slide.classList.add('pointer-events-none');
+                                            if (textEl) textEl.classList.replace('opacity-100', 'opacity-0');
+                                            if (badgeEl) badgeEl.classList.replace('opacity-100', 'opacity-0');
+                                        } else if (offset === 2 && totalSlides > 2) {
+                                            // 3rd slide in stack
+                                            targetState = states[2];
+                                            slide.classList.remove('drone-active-slide');
+                                            slide.classList.add('pointer-events-none');
+                                            if (textEl) textEl.classList.replace('opacity-100', 'opacity-0');
+                                            if (badgeEl) badgeEl.classList.replace('opacity-100', 'opacity-0');
+                                        } else {
+                                            // Hide others (push to the back)
+                                            targetState = hiddenStateRight;
+                                            slide.classList.remove('drone-active-slide');
+                                            slide.classList.add('pointer-events-none');
+                                            if (textEl) textEl.classList.replace('opacity-100', 'opacity-0');
+                                            if (badgeEl) badgeEl.classList.replace('opacity-100', 'opacity-0');
+                                        }
+
+                                        // Briefly animate outgoing slide differently if needed
+                                        // For simplicity, we just snap them to their new offset positions
+                                        slide.style.transform = targetState.transform;
+                                        slide.style.opacity = targetState.opacity;
+                                        slide.style.zIndex = targetState.zIndex;
+                                    });
+                                }
+
+                                function nextSlide() {
+                                    // Make current slide fly out left before index updates
+                                    const currentEl = slides[currentIndex];
+                                    currentEl.style.transform = hiddenStateLeft.transform;
+                                    currentEl.style.opacity = hiddenStateLeft.opacity;
+
+                                    // Update index and reset stack slightly delayed
+                                    setTimeout(() => {
+                                        currentIndex = (currentIndex + 1) % totalSlides;
+                                        updateSlides();
+                                    }, 200); // Small delay creates a "pulling out a card" feel
+                                }
+
+                                function prevSlide() {
+                                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                                    // Make the incoming slide fly in from the left
+                                    const incomingEl = slides[currentIndex];
+                                    incomingEl.style.transform = hiddenStateLeft.transform;
+                                    incomingEl.style.opacity = hiddenStateLeft.opacity;
+
+                                    // Force reflow
+                                    void incomingEl.offsetWidth;
+
+                                    updateSlides();
+                                }
+
+                                function resetTimer() {
+                                    clearInterval(autoPlayInterval);
+                                    autoPlayInterval = setInterval(nextSlide, 4500); // Slightly different timing than AI lab
+                                }
+
+                                if (nextBtn) {
+                                    nextBtn.addEventListener('click', () => {
+                                        nextSlide();
+                                        resetTimer();
+                                    });
+                                }
+
+                                if (prevBtn) {
+                                    prevBtn.addEventListener('click', () => {
+                                        prevSlide();
+                                        resetTimer();
+                                    });
+                                }
+
+                                // Initial Setup
+                                updateSlides();
+                                resetTimer();
+                            });
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Text Content (Right Side) -->
+                <div class="w-full md:w-1/2">
+                    <div
+                        class="inline-flex items-center gap-3 bg-accurate-yellow/20 px-4 py-2 rounded-full mb-6 border border-accurate-yellow/40">
+                        <div class="w-2 h-2 rounded-full bg-accurate-yellow animate-pulse"></div>
+                        <span class="text-accurate-dark-blue font-bold uppercase tracking-widest text-xs">Research
+                            Facility</span>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-black text-accurate-dark-blue leading-tight mb-6">
+                        UAV &<br><span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-accurate-yellow to-orange-500">Drone
+                            Lab</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        The ultimate playground for aerospace enthusiasts. Our UAV lab provides a dedicated airspace and
+                        hardware environment for designing, simulating, and piloting unmanned aerial vehicles,
+                        integrating advanced navigation and real-time computer vision systems.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4 text-gray-800 font-bold">
+                            <div
+                                class="w-8 h-8 rounded bg-accurate-blue/10 text-accurate-blue flex items-center justify-center shrink-0 border border-accurate-blue/20">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            Drone Prototyping Hardware
+                        </li>
+                        <li class="flex items-center gap-4 text-gray-800 font-bold">
+                            <div
+                                class="w-8 h-8 rounded bg-accurate-blue/10 text-accurate-blue flex items-center justify-center shrink-0 border border-accurate-blue/20">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            Flight Simulation Tools
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process Section -->
+    <section class="bg-[#F8FAFF] w-full py-16 md:py-20 border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-accurate-blue uppercase mb-4">How to Apply</h2>
+            <p class="text-gray-600 font-medium mb-12 max-w-2xl mx-auto">Follow these simple steps to secure your future
+                with the B.Tech program at Accurate Institute.</p>
+
+            <div class="relative flex flex-col md:flex-row justify-between items-start gap-8 md:gap-4 lg:gap-8">
+                <!-- Step 1 -->
+                <div class="flex-1 relative z-10">
+                    <div
+                        class="w-16 h-16 bg-accurate-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl relative">
+                        01
+                        <div
+                            class="hidden md:block absolute top-1/2 left-[calc(100%+0.5rem)] w-[calc(100%-4rem)] border-t-2 border-dashed border-accurate-blue opacity-30">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Registration</h3>
+                    <p class="text-sm text-gray-600 px-4">Fill out the online application form with your basic details.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex-1 relative z-10">
+                    <div
+                        class="w-16 h-16 bg-accurate-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl relative">
+                        02
+                        <div
+                            class="hidden md:block absolute top-1/2 left-[calc(100%+0.5rem)] w-[calc(100%-4rem)] border-t-2 border-dashed border-accurate-blue opacity-30">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Document Submission</h3>
+                    <p class="text-sm text-gray-600 px-4">Upload your academic records, certificates, and ID proof.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex-1 relative z-10">
+                    <div
+                        class="w-16 h-16 bg-accurate-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl relative">
+                        03
+                        <div
+                            class="hidden md:block absolute top-1/2 left-[calc(100%+0.5rem)] w-[calc(100%-4rem)] border-t-2 border-dashed border-accurate-blue opacity-30">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Counseling / IQ Test</h3>
+                    <p class="text-sm text-gray-600 px-4">Participate in our personalized counseling session and
+                        evaluation.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex-1 relative z-10">
+                    <div
+                        class="w-16 h-16 bg-accurate-yellow text-accurate-blue rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl">
+                        04
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Securing Seat</h3>
+                    <p class="text-sm text-gray-600 px-4">Complete the fee payment to confirm your admission for the
+                        2026 session.</p>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <a href="#"
+                    class="inline-block bg-accurate-blue text-white font-bold px-10 py-4 rounded-full shadow-lg hover:scale-105 transition-transform">Start
+                    Application Process</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Pathways Program Section -->
+    <!-- <section class="w-full bg-white py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-stretch gap-12 lg:gap-20">
+
+            
+            <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <h2
+                    class="text-3xl md:text-[40px] font-extrabold text-accurate-blue uppercase leading-[1.1] mb-2 tracking-tight">
+                    GLOBAL PATHWAYS</h2>
+                <h3 class="text-2xl md:text-3xl font-extrabold text-black uppercase tracking-widest mb-6">PROGRAM</h3>
+
+                <div class="border-t border-[#e5eaff] pt-6 mb-8 relative">
+                    
+                    <div class="absolute top-[-2px] left-0 w-24 h-[3px] bg-accurate-blue opacity-20"></div>
+                    <p class="text-gray-600 font-medium text-sm md:text-base leading-relaxed">
+                        Start in India at Accurate Institute, Finish at a Renowned University Abroad
+                    </p>
+                </div>
+
+             
+                <div class="flex flex-wrap items-start gap-4 md:gap-8 mt-4">
+              
+                    <div class="flex flex-col items-center flex-1 min-w-[100px] text-center">
+                        <div
+                            class="w-14 h-14 md:w-16 md:h-16 rounded-full border border-blue-100 bg-white flex items-center justify-center mb-3 shadow-md text-accurate-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-9 md:h-9" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 3h7v7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 14L21 3" />
+                            </svg>
+                        </div>
+                        <span
+                            class="text-[11px] md:text-xs text-gray-800 font-medium leading-tight">International<br>Experience</span>
+                    </div>
+
+       
+                    <div class="flex flex-col items-center flex-1 min-w-[100px] text-center">
+                        <div
+                            class="w-14 h-14 md:w-16 md:h-16 rounded-full border border-blue-100 bg-white flex items-center justify-center mb-3 shadow-md text-accurate-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-9 md:h-9" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 3v2a2 2 0 01-2 2H9" />
+                            </svg>
+                        </div>
+                        <span class="text-[11px] md:text-xs text-gray-800 font-medium leading-tight">Cost
+                            Effective<br>Transition</span>
+                    </div>
+
+
+                    <div class="flex flex-col items-center flex-1 min-w-[100px] text-center">
+                        <div
+                            class="w-14 h-14 md:w-16 md:h-16 rounded-full border border-blue-100 bg-white flex items-center justify-center mb-3 shadow-md text-accurate-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-9 md:h-9" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
+                            </svg>
+                        </div>
+                        <span class="text-[11px] md:text-xs text-gray-800 font-medium leading-tight">Global
+                            Work<br>Experience</span>
+                    </div>
+                </div>
+
+            </div>
+
+         
+            <div class="w-full md:w-1/2 flex justify-center lg:justify-end mt-12 md:mt-0 relative">
+                <div
+                    class="bg-[#f7f7f7] rounded-[24px] w-full max-w-[500px] p-8 md:p-10 pt-16 relative flex flex-col items-center justify-center min-h-[300px] shadow-sm">
+
+                
+                    <div
+                        class="absolute -top-5 bg-accurate-blue text-white font-bold text-sm md:text-base px-8 py-2.5 rounded shadow-md uppercase tracking-wide border-2 border-white">
+                        Accreditations
+                    </div>
+
+                
+                    <div class="w-full h-full flex flex-col justify-center gap-10">
+                       
+                        <div class="flex flex-wrap justify-center items-center w-full gap-6 md:gap-10">
+                       
+                            <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                                <img src="image/accreditations/aicte-logo.webp" alt="AICTE"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                       
+                            <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                                <img src="image/accreditations/naac-logo.webp" alt="NAAC"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                   
+                            <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                                <img src="image/accreditations/iso.webp" alt="ISO"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                   
+                            <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                                <img src="image/accreditations/ccsu-logo.webp" alt="CCSU"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- Scholarship Section -->
+    <section class="bg-[#F0F4FF] w-full py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-accurate-blue uppercase mb-6">Scholarship
+                        Program</h2>
+                    <p class="text-gray-700 font-medium mb-8 leading-relaxed">We believe in rewarding merit and
+                        supporting dreams. Accurate Institute offers comprehensive scholarships to deserving candidates
+                        based on academic excellence and entrance performance.</p>
+
+                    <!-- <div class="space-y-4">
+                        <div
+                            class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-accurate-yellow flex items-center gap-4">
+                            <div class="text-2xl font-black text-accurate-blue">100%</div>
+                            <div class="text-sm font-bold text-gray-800">Merit-Based Scholarship for Toppers</div>
+                        </div>
+                        <div
+                            class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-accurate-blue flex items-center gap-4">
+                            <div class="text-2xl font-black text-accurate-blue">50%</div>
+                            <div class="text-sm font-bold text-gray-800">For JEE Main / State Entrance Rank Holders
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-accurate-yellow flex items-center gap-4">
+                            <div class="text-2xl font-black text-accurate-blue">25%</div>
+                            <div class="text-sm font-bold text-gray-800">Girl Child & Defense Personnel Ward</div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+                            alt="Students" class="rounded-2xl shadow-2xl">
+                        <div
+                            class="absolute -bottom-6 -left-6 bg-accurate-yellow p-8 rounded-2xl shadow-xl hidden md:block">
+                            <!-- <p class="text-accurate-blue font-black text-4xl mb-1">₹5 Cr+</p> -->
+                            <p class="text-accurate-blue font-bold text-sm uppercase tracking-wider">Scholarship Program
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Infrastructure Section -->
+    <section class="bg-white w-full py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-accurate-blue uppercase mb-4">World Class
+                    Infrastructure</h2>
+                <p class="text-gray-600 font-medium max-w-2xl mx-auto">Experience a campus designed for innovation,
+                    collaboration, and holistic growth.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-80">
+                    <img src="https://www.accurate.in/admission/engineering/btech/assets/img/main-banner.webp"
+                        alt="Advanced Labs"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-accurate-blue/90 to-transparent flex flex-col justify-end p-8">
+                        <h3 class="text-white font-bold text-xl mb-2">Advanced Tech Labs</h3>
+                        <p class="text-white/80 text-sm">Industry-standard equipment for hands-on learning.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-80">
+                    <img src="https://www.accurate.in/images/library/1.jpg" alt="Digital Library"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-accurate-blue/90 to-transparent flex flex-col justify-end p-8">
+                        <h3 class="text-white font-bold text-xl mb-2">Modern Library</h3>
+                        <p class="text-white/80 text-sm">Extensive collection of digital and physical resources.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-80">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXayUK73dAPBL8g7_8eY76BiBQQFYp_L9mHw&s"
+                        alt="Hostel Facilities"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-accurate-blue/90 to-transparent flex flex-col justify-end p-8">
+                        <h3 class="text-white font-bold text-xl mb-2">Premium Housing</h3>
+                        <p class="text-white/80 text-sm">Safe and comfortable home away from home.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex flex-wrap justify-center gap-4">
+                <span class="bg-gray-100 text-accurate-blue font-bold px-6 py-2 rounded-full text-sm">Wi-Fi
+                    Campus</span>
+                <span class="bg-gray-100 text-accurate-blue font-bold px-6 py-2 rounded-full text-sm">Sports
+                    Complex</span>
+                <span class="bg-gray-100 text-accurate-blue font-bold px-6 py-2 rounded-full text-sm">Auditorium</span>
+                <span class="bg-gray-100 text-accurate-blue font-bold px-6 py-2 rounded-full text-sm">Green
+                    Campus</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BU Placements Section -->
+    <section class="w-full bg-white pb-16 md:pb-24 pt-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2
+                class="text-3xl md:text-4xl font-extrabold text-accurate-blue text-center uppercase mb-12 tracking-tight">
+                ACCURATE PLACEMENTS</h2>
+
+            <!-- Carousel Card Container -->
+            <div id="placements-carousel-container"
+                class="bg-[#EBF0FF] rounded-xl max-w-[950px] mx-auto flex flex-col md:flex-row relative overflow-hidden shadow-sm transition-opacity duration-300">
+
+                <!-- Left Student Image Area -->
+                <div
+                    class="w-full md:w-[45%] h-[350px] md:h-[450px] relative z-10 flex items-center justify-center overflow-hidden">
+                    <!-- Hand-drawn style decorative swooshes -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <svg class="w-[100%] h-[100%] text-[#2563eb] opacity-40" viewBox="0 0 200 200" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <!-- Circular swooshes around head -->
+                            <path d="M140 40 Q 155 45 150 70" stroke-dasharray="2 4" />
+                            <path d="M160 80 Q 165 100 155 120" stroke-dasharray="3 3" />
+                            <path d="M145 140 Q 135 150 110 155" stroke-dasharray="1 5" />
+                            <path d="M40 60 Q 30 80 35 110" stroke-dasharray="4 2" />
+                            <path d="M25 130 Q 30 145 50 150" stroke-dasharray="2 3" />
+                            <!-- Small accent marks -->
+                            <path d="M50 45 L 60 50" />
+                            <path d="M45 55 L 55 60" />
+                            <path d="M150 140 L 160 145" />
+                        </svg>
+                    </div>
+                    <!-- Student Image -->
+                    <div
+                        class="w-50 h-50 md:w-50 md:h-50 rounded-full border-[6px] border-white shadow-xl overflow-hidden flex justify-center items-center relative z-20 bg-white">
+                        <img id="placement-student-image"
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=800&q=80"
+                            alt="Student"
+                            class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+                    </div>
+                </div>
+
+                <!-- Right Text Content Area -->
+                <div
+                    class="w-full md:w-[55%] p-8 py-10 md:py-16 md:pl-10 md:pr-12 relative z-10 flex flex-col justify-center">
+
+                    <h3 id="placement-quote"
+                        class="text-[26px] md:text-3xl lg:text-[40px] font-extrabold text-[#113C7B] leading-[1.1] mb-8 tracking-tight">
+                        "Lift your career <br class="hidden md:block">beyond expectations"
+                    </h3>
+
+                    <div class="mb-4">
+                        <div id="placement-name" class="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+                            Noopur Joshi</div>
+                        <div id="placement-course"
+                            class="text-[14px] md:text-base text-gray-700 font-bold tracking-wide mt-1">MBA</div>
+                    </div>
+
+                    <!-- <div class="mb-8 mt-2">
+                        <div
+                            class="inline-block bg-yellow-500 text-white text-sm md:text-base px-6 py-2 rounded-sm font-bold tracking-wider shadow-sm">
+                            CTC <span id="placement-ctc" class="font-extrabold">25.04 LPA</span> PER ANNUM
+                        </div>
+                    </div> -->
+
+                    <div class="flex items-center gap-4 mt-2">
+                        <div class="text-[14px] font-bold text-gray-800 tracking-wider">PLACED AT</div>
+                        <!-- Company Logo & Name -->
+                        <div class="flex items-center gap-3 ml-2">
+                            <div id="placement-logo-container" class="w-10 h-10 flex items-center justify-center">
+                                <svg id="placement-company-icon" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-full h-full text-[#113C7B]">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div id="placement-company"
+                                    class="text-lg md:text-xl font-extrabold text-[#113C7B] tracking-tight mt-1">
+                                    ONE IT Solution</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="placement-company-logo" src="" alt="Company Logo"
+                            class="h-12 md:h-16 max-w-[150px] md:max-w-[200px] w-auto object-contain object-left hidden mt-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dots Pagination Navigation -->
+            <div id="placement-dots" class="flex justify-center gap-3 mt-8">
+                <!-- Dots will be injected here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Recruiters Section -->
+    <section class="w-full bg-[#FAFBFF] py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2
+                class="text-3xl md:text-4xl font-extrabold text-accurate-blue text-center uppercase mb-10 tracking-tight">
+                KEY RECRUITERS</h2>
+
+            <div class="relative w-full overflow-hidden px-2">
+                <!-- Slider Track -->
+                <div id="recruiters-track" class="flex items-center transition-transform duration-500 ease-in-out">
+                    <!-- Cards will be populated here via JS -->
+                </div>
+            </div>
+
+            <!-- Dots Pagination Navigation -->
+            <div id="recruiters-dots" class="flex justify-center gap-2 mt-8">
+                <!-- Dots injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="w-full bg-[#F0F4FF] py-16 md:py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-[28px] md:text-[42px] font-extrabold text-accurate-dark-blue mb-6">Frequently Asked
+                Questions</h2>
+
+            <!-- Tabs -->
+            <div class="flex flex-wrap gap-3 md:gap-4 mb-8">
+                <button
+                    class="faq-tab bg-accurate-blue text-white px-6 md:px-8 py-2 md:py-2.5 rounded-[4px] font-medium text-[20px] md:text-sm uppercase tracking-wide transition shadow-sm"
+                    data-category="general">GENERAL</button>
+                <button
+                    class="faq-tab bg-white text-accurate-blue px-6 md:px-8 py-2 md:py-2.5 rounded-[4px] font-medium text-[20px] md:text-sm uppercase tracking-wide transition shadow-sm"
+                    data-category="academics">ACADEMICS</button>
+                <button
+                    class="faq-tab bg-white text-accurate-blue px-6 md:px-8 py-2 md:py-2.5 rounded-[4px] font-medium text-[20px] md:text-sm uppercase tracking-wide transition shadow-sm"
+                    data-category="admission">ADMISSION</button>
+            </div>
+
+            <!-- FAQ Container -->
+            <div id="faq-container" class="flex flex-col">
+                <!-- Items injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const programsData = {
+            "ai": {
+                title: "B.Tech in Computer Science & Engineering",
+                image: "https://www.accurate.in/engg/img/classrooms/classroom4.webp",
+                sections: [
+                    { programs: ["Master the fundamentals of computing, software development, and modern technologies to build the future of tech."] }
+                ]
+            },
+            "cset": {
+                title: "B.Tech in Computer Science & Engineering (AI & ML)",
+                image: "https://www.accurate.in/img/campus/dsc_9864.webp",
+                sections: [
+                    { programs: ["Specialized program focusing on Artificial Intelligence and Machine Learning algorithms, data science, and intelligent systems."] }
+                ]
+            },
+            "se": {
+                title: "B.Tech in Mechanical Engineering",
+                image: "https://www.accurate.in/img/campus/best-engg.jpg",
+                sections: [
+                    { programs: ["Explore the world of machines, thermodynamics, and manufacturing with hands-on training in modern mechanical systems."] }
+                ]
+            },
+            "sm": {
+                title: "B.Tech in Electronics & Communication Engineering",
+                image: "https://www.accurate.in/img/campus/best-pgdm-institute.jpg",
+                sections: [
+                    { programs: ["Design and develop the next generation of communication systems, electronic circuits, and smart devices."] }
+                ]
+            },
+
+
+
+
+
+
+            // "se": { title: "B.Tech in Mechanical Engineering", sections: [{ category: "Undergraduate Programs", programs: ["B.Tech (Mechanical Engineering)", "B.Tech (Electronics & Communication Engineering)", "B.Tech (Engineering Physics)"] }] },
+            // "sm": { title: "B.Tech in Electronics & Communication Engineering", sections: [{ category: "Undergraduate Programs", programs: ["B.Tech (Electronics & Communication Engineering)"] }] },
+            // "sl": { title: "School of Law", sections: [{ category: "Undergraduate Programs", programs: ["BA LLB (Hons)", "BBA LLB (Hons)"] }, { category: "Postgraduate Programs", programs: ["LLM"] }, { category: "Doctoral Program", programs: ["Ph.D. in Law"] }] },
+            // "sd": { title: "School of Design", sections: [{ category: "Undergraduate Programs", programs: ["B.Des (Visual Communication)", "B.Des (Product Design)"] }] },
+            // "sla": { title: "School of Liberal Arts", sections: [{ category: "Undergraduate Programs", programs: ["BA (Liberal Arts)"] }, { category: "Doctoral Program", programs: ["Ph.D."] }] },
+            // "tsm": { title: "Times School of Media", sections: [{ category: "Undergraduate Programs", programs: ["BA (Journalism & Mass Communication)", "BA (Film & TV)"] }, { category: "Postgraduate Programs", programs: ["PG Diploma in Digital Media"] }] },
+            // "sgp": { title: "School of Global Pathways", sections: [{ category: "Programs", programs: ["International Immersion Programs", "Dual Degree Programs in collaboration with top global universities"] }] },
+            // "iip": { title: "Industry Integrated Programs", sections: [{ category: "Programs", programs: ["B.Tech with Industry Focus", "Specialized Certifications"] }] }
+        };
+
+        const sidebarTabs = document.querySelectorAll('.school-tab');
+        const programsContent = document.getElementById('programs-content');
+
+        sidebarTabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Remove active classes from all tabs
+                sidebarTabs.forEach(t => {
+                    t.classList.remove('border-accurate-blue', 'bg-blue-50', 'shadow-sm', 'text-accurate-blue', 'font-bold');
+                    t.classList.add('border-transparent', 'hover:border-gray-200', 'text-gray-600', 'hover:bg-gray-50', 'hover:text-gray-900', 'font-medium');
+                    const svg = t.querySelector('svg');
+                    if (svg) {
+                        svg.classList.remove('opacity-100');
+                        svg.classList.add('opacity-0', 'group-hover:opacity-100');
+                    }
+                });
+
+                // Add active classes to the clicked tab
+                this.classList.remove('border-transparent', 'hover:border-gray-200', 'text-gray-600', 'hover:bg-gray-50', 'hover:text-gray-900', 'font-medium');
+                this.classList.add('border-accurate-blue', 'bg-blue-50', 'shadow-sm', 'text-accurate-blue', 'font-bold');
+                const svg = this.querySelector('svg');
+                if (svg) {
+                    svg.classList.remove('opacity-0', 'group-hover:opacity-100');
+                    svg.classList.add('opacity-100');
+                }
+
+                // Get ID and data
+                const schoolId = this.getAttribute('data-school');
+                const data = programsData[schoolId];
+
+                if (data) {
+                    let htmlStr = `<h3 class="text-lg md:text-xl font-bold text-accurate-blue mb-4 pb-2 border-b-2 border-accurate-blue inline-block">${data.title}</h3><div class="mt-2 space-y-6">`;
+
+                    data.sections.forEach(sec => {
+                        if (sec.category) {
+                            htmlStr += `<div><h4 class="text-sm font-extrabold text-gray-800 mb-3">${sec.category}</h4><ul class="space-y-2">`;
+                            sec.programs.forEach(prog => {
+                                htmlStr += `<li class="flex items-start text-xs md:text-[13px] text-gray-700 font-medium">
+                                            <span class="text-gray-400 font-bold mr-2 text-[10px] mt-[2px]">»</span> ${prog}
+                                        </li>`;
+                            });
+                            htmlStr += `</ul></div>`;
+                        } else {
+                            sec.programs.forEach(prog => {
+                                htmlStr += `<p class="text-xs md:text-[13px] text-gray-700 font-medium">${prog}</p>`;
+                            });
+                            if (data.image) {
+                                htmlStr += `<div class="w-full mt-4 overflow-hidden rounded-xl shadow-lg group">
+                                            <img src="${data.image}" alt="${data.title}" 
+                                                class="w-full h-48 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                                        </div>`;
+                            }
+                        }
+                    });
+
+                    htmlStr += `</div>`;
+                    programsContent.innerHTML = htmlStr;
+                }
+            });
+        });
+
+        const placementData = [
+            {
+                quote: "\"A transformative <br class='hidden md:block'>learning journey\"",
+                name: "Arzoo Bharti",
+                course: "B.Tech",
+                // ctc: "18.00 LPA",
+                company: "Intellipaat",
+                companyLogo: "image/placement-logo/intellipaat.webp", // Add company logo image path here
+                image: "image/placement/arzoo.webp"
+            },
+            {
+                quote: "\"Industry-ready <br class='hidden md:block'>from day one\"",
+                name: "Harshit Singhal",
+                course: "B.Tech",
+                // ctc: "18.00 LPA",
+                company: "Indus Valley Partners",
+                companyLogo: "image/placement-logo/indus.avif", // Add company logo image path here
+                image: "image/placement/harshit.webp"
+            },
+            {
+                quote: "\"World-class <br class='hidden md:block'> innovation\"",
+                name: "Ravi Patel",
+                course: "B.Tech",
+                // ctc: "15.50 LPA",
+                company: "Indus Valley Partners",
+                companyLogo: "image/placement-logo/indus.avif", // Add company logo image path here
+                image: "image/placement/ravi-patel.webp"
+            },
+            {
+                quote: "\"Unmatched support <br class='hidden md:block'>for startup ideas\"",
+                name: "Shivangi Kashyap",
+                course: "B.Tech",
+                // ctc: "12.00 LPA",
+                company: "Indus Valley Partners",
+                companyLogo: "image/placement-logo/indus.avif", // Add company logo image path here
+                image: "image/placement/shivangi-kashyap.webp"
+            },
+            {
+                quote: "\"Unmatched support <br class='hidden md:block'>for startup ideas\"",
+                name: "Shubham Yadav",
+                course: "B.Tech",
+                // ctc: "12.00 LPA",
+                company: "Indus Valley Partners",
+                companyLogo: "image/placement-logo/indus.avif", // Add company logo image path here
+                image: "image/placement/shubham-yadav.webp"
+            },
+            {
+                quote: "\"Unmatched support <br class='hidden md:block'>for startup ideas\"",
+                name: "Soniya Braahman",
+                course: "B.Tech",
+                // ctc: "12.00 LPA",
+                company: "TCS",
+                companyLogo: "image/placement-logo/tcs.webp", // Add company logo image path here
+                image: "image/placement/soniya-braahman.webp"
+            },
+        ];
+
+        let currentPlacementIndex = 0;
+        const placementDotsContainer = document.getElementById('placement-dots');
+        const carouselContainer = document.getElementById('placements-carousel-container');
+
+        // Elements to update
+        const elQuote = document.getElementById('placement-quote');
+        const elName = document.getElementById('placement-name');
+        const elCourse = document.getElementById('placement-course');
+        // const elCtc = document.getElementById('placement-ctc');
+        const elCompany = document.getElementById('placement-company');
+        const elCompanyLogo = document.getElementById('placement-company-logo');
+        const elImage = document.getElementById('placement-student-image');
+
+        function updatePlacementCarousel(index) {
+            // Fade out
+            carouselContainer.style.opacity = '0';
+
+            setTimeout(() => {
+                const data = placementData[index];
+                elQuote.innerHTML = data.quote;
+                elName.textContent = data.name;
+                elCourse.textContent = data.course;
+                // elCtc.textContent = data.ctc;
+                elCompany.textContent = data.company;
+
+                if (data.companyLogo) {
+                    elCompanyLogo.src = data.companyLogo;
+                    elCompanyLogo.classList.remove('hidden');
+                } else {
+                    elCompanyLogo.classList.add('hidden');
+                }
+
+                if (data.image) {
+                    elImage.src = data.image;
+                }
+
+                // Update dots
+                const dots = placementDotsContainer.querySelectorAll('button');
+                dots.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.className = 'w-2 h-2 rounded-full bg-accurate-blue transition';
+                    } else {
+                        dot.className = 'w-2 h-2 rounded-full bg-gray-200 hover:bg-gray-300 transition cursor-pointer';
+                    }
+                });
+
+                // Fade in
+                carouselContainer.style.opacity = '1';
+            }, 300); // Wait for fade out
+        }
+
+        function initPlacementCarousel() {
+            placementDotsContainer.innerHTML = '';
+            placementData.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.className = i === 0 ? 'w-2 h-2 rounded-full bg-accurate-blue transition' : 'w-2 h-2 rounded-full bg-gray-200 hover:bg-gray-300 transition cursor-pointer';
+                dot.addEventListener('click', () => {
+                    currentPlacementIndex = i;
+                    updatePlacementCarousel(currentPlacementIndex);
+                });
+                placementDotsContainer.appendChild(dot);
+            });
+            updatePlacementCarousel(0);
+        }
+
+        initPlacementCarousel();
+
+        // Optional Auto-slide
+        setInterval(() => {
+            currentPlacementIndex = (currentPlacementIndex + 1) % placementData.length;
+            updatePlacementCarousel(currentPlacementIndex);
+        }, 5000);
+
+        // --- KEY RECRUITERS SLIDER LOGIC ---
+        const recruitersData = [
+            'image/placement-logo/logo.webp',
+            'image/placement-logo/logo-1.webp',
+            'image/placement-logo/logo-2.webp',
+            'image/placement-logo/logo-3.webp',
+            'image/placement-logo/logo-4.webp',
+            'image/placement-logo/logo-5.webp',
+            'image/placement-logo/logo-6.webp',
+            'image/placement-logo/logo-7.webp',
+            'image/placement-logo/logo-8.webp',
+            'image/placement-logo/logo-9.webp',
+            'image/placement-logo/logo-10.webp',
+            'image/placement-logo/logo-11.webp',
+            'image/placement-logo/logo-12.webp',
+            'image/placement-logo/logo-13.webp',
+            'image/placement-logo/logo-14.webp',
+            'image/placement-logo/logo-15.webp',
+
+        ];
+
+        const recruitersTrack = document.getElementById('recruiters-track');
+        const recruitersDotsContainer = document.getElementById('recruiters-dots');
+        let currentRecruiterPage = 0;
+
+        let isMobileRecruiters = window.innerWidth < 768;
+        let recruitersPerPage = isMobileRecruiters ? 2 : 4; // Display limits
+
+        // Let's duplicate data to make it look full and slide better if needed,
+        // but for now, we just slide pages.
+        function renderRecruiters() {
+            recruitersTrack.className = 'flex items-center gap-4 transition-transform duration-500 ease-in-out';
+            recruitersTrack.innerHTML = '';
+            recruitersData.forEach(logoSrc => {
+                const card = document.createElement('div');
+                card.className = "bg-white py-4 px-6 md:py-6 md:px-8 shadow-sm flex items-center justify-center min-w-[150px] md:min-w-[200px] h-[100px] md:h-[120px] shrink-0";
+                card.innerHTML = `<img src="${logoSrc}" alt="Recruiter Logo" class="max-h-full max-w-full object-contain">`;
+                recruitersTrack.appendChild(card);
+            });
+            updateRecruiterDots();
+            moveRecruiterSlider();
+        }
+
+        function updateRecruiterDots() {
+            recruitersDotsContainer.innerHTML = '';
+            recruitersPerPage = isMobileRecruiters ? 2 : 4;
+            // Calculate how many times we can slide
+            // If we slide 1 item at a time instead of full pages, we need dots = total - perPage + 1
+            const totalDots = Math.max(1, recruitersData.length - recruitersPerPage + 1);
+
+            for (let i = 0; i < totalDots; i++) {
+                const dot = document.createElement('button');
+                dot.className = i === currentRecruiterPage ? 'w-2 h-2 rounded-full bg-accurate-blue transition' : 'w-2 h-2 rounded-full bg-gray-200 hover:bg-gray-300 transition cursor-pointer';
+                dot.addEventListener('click', () => {
+                    currentRecruiterPage = i;
+                    updateRecruiterDots();
+                    moveRecruiterSlider();
+                });
+                recruitersDotsContainer.appendChild(dot);
+            }
+        }
+
+        function moveRecruiterSlider() {
+            // Card width + gap = 150 + 16 on mobile, 200 + 16 on desktop
+            const cardWidth = isMobileRecruiters ? 150 + 16 : 200 + 16;
+            const translateValue = currentRecruiterPage * cardWidth;
+            recruitersTrack.style.transform = `translateX(-${translateValue}px)`;
+        }
+
+        window.addEventListener('resize', () => {
+            const wasMobile = isMobileRecruiters;
+            isMobileRecruiters = window.innerWidth < 768;
+            if (wasMobile !== isMobileRecruiters) {
+                currentRecruiterPage = 0;
+                renderRecruiters();
+            }
+        });
+
+        renderRecruiters();
+
+        // Auto-slider for Key Recruiters
+        setInterval(() => {
+            const totalDots = Math.max(1, recruitersData.length - recruitersPerPage + 1);
+            currentRecruiterPage = (currentRecruiterPage + 1) % totalDots;
+            updateRecruiterDots();
+            moveRecruiterSlider();
+        }, 3500);
+
+        // --- FAQ LOGIC ---
+        const faqData = {
+            general: [
+                { q: "What is the admission procedure?", a: "Admissions are strictly based on merit. We accept Score / Rank of national and state level entrance tests like JEE, CUET, / Any other applicable entrance test recognised by Govt. or Accurate Institute's own specific admission process depending on the chosen program." },
+                { q: "When do admissions open?", a: "Admissions generally open in the first quarter of the year. Students /parents are advised to visit our official website regularly for the latest deadlines and application forms." },
+                { q: "Can I apply for multiple programs?", a: "Yes, candidates can apply for multiple programs provided they meet the specific eligibility criteria and must have appeared for the required entrance exams." },
+                // { q: "What is campus life like at Accurate Institute?", a: "Campus life is diverse and vibrant with 40+ student-led clubs, annual cultural fests, extensive sports events, and continuous industry interactions to keep students engaged." },
+                // { q: "What placement opportunities does Accurate Institute offer?", a: "The university boasts a dedicated placement cell with stellar track records, offering placements in top MNCs and corporations globally with packages up to ₹1.37 CR PA." },
+                // { q: "Does Accurate Institute offer scholarships?", a: "Yes, we offer up to 100% scholarships based on academic merit, entrance exam scores, and outstanding sports achievements." },
+                // { q: "Which companies recruit from Accurate Institute?", a: "Top recruiters include Tata Power, KPMG, Goldman Sachs, Deloitte, Dell, Capgemini, TCS, Microsoft, Amazon, IBM, and many more industry leaders." },
+                // { q: "Does the university provide internship support?", a: "Yes, extensive internship support is provided through our industry partnerships, the career services center, and corporate collaborations." }
+            ],
+            academics: [
+                { q: "What programs are offered at Accurate Institute?", a: "We offer multiple UG & PG programs across Engineering, Management, Law, Pharmacy, Commerce, computer Application." },
+                { q: "What is the student-to-faculty ratio?", a: "We maintain a highly favourable and low student-to-faculty ratio to ensure personalized attention, quality education, and dedicated mentoring process." },
+                { q: "Are the programs industry-aligned?", a: "Absolutely. Our curriculum is designed in collaboration with industry experts and corporate partners to ensure students learn highly relevant and in-demand future skills and make them industry ready." }
+            ],
+            admission: [
+                { q: "How are you preparing your students to be Industry ready?", a: "Our learning ecosystem ensures students are not only trained for today's roles, but prepared for tomorrow's technologies." },
+                { q: "What qualities do your students have which other college students lack?", a: "We prepare students not just to pass examinations, but to perform, compete, and grow in dynamic professional environments." },
+                { q: "Is your college receptive to innovation, technology, science & entrepreneurship?", a: "Yes,Integrated exposure to emerging and high-demand domains such as Artificial Intelligence, Data Science, Cloud Computing, Automation, Digital Transformation, and other evolving technologies — ensuring graduates remain relevant in a rapidly changing world. Our Incubation centre helps students to become acquainted with entrepreneurship." }
+            ]
+        };
+
+        const faqContainer = document.getElementById('faq-container');
+        const faqTabs = document.querySelectorAll('.faq-tab');
+
+        function renderFaqs(category) {
+            faqContainer.innerHTML = '';
+            const faqs = faqData[category];
+
+            faqs.forEach((faq, index) => {
+                const item = document.createElement('div');
+                item.className = 'border-b border-[#e1e6f9] py-4';
+
+                const questionHtml = `
+                    <button class="faq-question w-full text-left flex justify-between items-center text-accurate-blue text-[20px] cursor-pointer focus:outline-none tracking-wide">
+                        <span>${faq.q}</span>
+                    </button>
+                    <div class="faq-answer mt-3 text-sm md:text-[16px] text-gray-700 leading-relaxed font-medium hidden pr-4">
+                        ${faq.a}
+                    </div>
+                `;
+
+                item.innerHTML = questionHtml;
+                faqContainer.appendChild(item);
+
+                const btn = item.querySelector('.faq-question');
+                const ans = item.querySelector('.faq-answer');
+
+                btn.addEventListener('click', () => {
+                    const isHidden = ans.classList.contains('hidden');
+                    // Optional: Close all other answers for a strict accordion effect
+                    // document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+
+                    if (isHidden) {
+                        ans.classList.remove('hidden');
+                    } else {
+                        ans.classList.add('hidden');
+                    }
+                });
+
+                // Open the first one by default if it's the general category (just like the screenshot)
+                if (index === 0 && category === 'general') {
+                    ans.classList.remove('hidden');
+                }
+            });
+        }
+
+        faqTabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Remove active classes from all tabs
+                faqTabs.forEach(t => {
+                    t.classList.remove('bg-accurate-blue', 'text-white');
+                    t.classList.add('bg-white', 'text-accurate-blue');
+                });
+
+                // Add active classes to the clicked tab
+                this.classList.remove('bg-white', 'text-accurate-blue');
+                this.classList.add('bg-accurate-blue', 'text-white');
+
+                // Render new FAQs
+                const category = this.getAttribute('data-category');
+                renderFaqs(category);
+            });
+        });
+
+        // Initialize with 'general' FAQs
+        renderFaqs('general');
+
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            alert('Login attempted for: ' + email);
+        });
+    </script>
+
+    <!-- Bottom Yellow CTA Banner -->
+    <section class="w-full bg-accurate-yellow py-6 flex justify-center items-center">
+        <a href="#"
+            class="bg-accurate-blue text-white px-8 md:px-10 py-2.5 md:py-3 rounded-full font-bold text-sm md:text-base tracking-wide shadow-md hover:bg-opacity-90 transition-colors duration-300">Apply
+            Now</a>
+    </section>
+
+    <!-- Bottom Branding Bar -->
+    <!-- <section class="w-full bg-white border-t border-gray-200 py-3 px-4 flex justify-end items-center">
+        
+        <div class="flex items-center gap-2 pr-2 md:pr-10">
+            <svg class="h-5 md:h-6 w-auto" viewBox="0 0 100 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+             
+                <path d="M4 12 C4 12, 12 1, 16 12 C20 23, 28 12, 28 12" stroke="#cb202d" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12 C4 12, 12 1, 16 12 C20 23, 28 12, 28 12" stroke="#0059a4" stroke-dasharray="14 100"
+                    stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              
+                <text x="34" y="18" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="18"
+                    fill="#111">meritto</text>
+            </svg>
+        </div>
+    </section> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function FashionSlider(s) {
+            let t = !1,
+                i = !1,
+                r;
+            const n = u => {
+                u.classList.add("fashion-slider-no-transition"), i = !0, cancelAnimationFrame(r), r = requestAnimationFrame(() => {
+                    u.classList.remove("fashion-slider-no-transition"), i = !1, t = !1
+                })
+            };
+            let l;
+            const o = () => {
+                t || l.slideNext()
+            },
+                a = () => {
+                    t || l.slidePrev()
+                },
+                d = u => {
+                    u.el.querySelector(".fashion-slider-button-next").addEventListener("click", o), u.el.querySelector(".fashion-slider-button-prev").addEventListener("click", a)
+                },
+                p = u => {
+                    u.el.querySelector(".fashion-slider-button-next").removeEventListener("click", o), u.el.querySelector(".fashion-slider-button-prev").removeEventListener("click", a)
+                };
+            let c;
+            l = new Swiper(s, {
+                direction: "horizontal",
+                speed: 1300,
+                allowTouchMove: !1,
+                parallax: !0,
+                on: {
+                    loopFix() {
+                        c = !1
+                    },
+                    transitionStart(u) {
+                        if (u.params.loop) {
+                            if (c) return;
+                            c || (c = !0)
+                        }
+                        const { slides: m, previousIndex: h, activeIndex: b, el: S } = u;
+                        i || (t = !0);
+                        const g = m[b],
+                            v = m[h],
+                            E = v.querySelector(".fashion-slider-scale"),
+                            w = v.querySelector("img"),
+                            I = g.querySelector("img"),
+                            M = b - h,
+                            y = g.getAttribute("data-slide-bg-color");
+                        S.style["background-color"] = y, E.style.transform = "scale(0.6)", w.style.transitionDuration = "1000ms", w.style.transform = "scale(1.2)";
+                        const L = v.querySelector(".fashion-slider-title-text");
+                        L.style.transition = "1000ms", L.style.color = "rgba(255,255,255,0)";
+                        const x = T => {
+                            T.target === w && (w.removeEventListener("transitionend", x), I.style.transitionDuration = "1300ms", I.style.transform = "translate3d(0, 0, 0) scale(1.2)", w.style.transitionDuration = "1300ms", w.style.transform = `translate3d(${60 * M * (u.isHorizontal() ? 1 : 0)}%, ${60 * M * (u.isHorizontal() ? 0 : 1)}%, 0)  scale(1.2)`)
+                        };
+                        w.addEventListener("transitionend", x)
+                    },
+                    transitionEnd(u) {
+                        const { slides: f, activeIndex: m, el: h } = u,
+                            b = f[m],
+                            S = b.querySelector("img"),
+                            g = u.params.loop;
+                        b.querySelector(".fashion-slider-scale").style.transform = "scale(1)", S.style.transitionDuration = "1000ms", S.style.transform = "scale(1)";
+                        const v = b.querySelector(".fashion-slider-title-text");
+                        v.style.transition = "1000ms", v.style.color = "rgba(255,255,255,1)";
+                        const E = w => {
+                            w.target === S && (S.removeEventListener("transitionend", E), t = !1)
+                        };
+                        S.addEventListener("transitionend", E), g || (m === 0 ? h.querySelector(".fashion-slider-button-prev").classList.add("fashion-slider-button-disabled") : h.querySelector(".fashion-slider-button-prev").classList.remove("fashion-slider-button-disabled"), m === f.length - 1 ? h.querySelector(".fashion-slider-button-next").classList.add("fashion-slider-button-disabled") : h.querySelector(".fashion-slider-button-next").classList.remove("fashion-slider-button-disabled"))
+                    },
+                    beforeInit(u) {
+                        const { el: f } = u;
+                        n(f)
+                    },
+                    init(u) {
+                        const { slides: f, activeIndex: m, el: h } = u, b = f[m].getAttribute("data-slide-bg-color");
+                        h.style["background-color"] = b, u.emit("transitionEnd"), d(u)
+                    },
+                    resize(u) {
+                        n(u.el)
+                    },
+                    destroy(u) {
+                        p(u)
+                    }
+                }
+            })
+            return l;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const qt = document.querySelector(".fashion-slider .swiper");
+            if (qt) {
+                FashionSlider(qt);
+            }
+        });
+    </script>
+</body>
+
+</html>
