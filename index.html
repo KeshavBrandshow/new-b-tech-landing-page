@@ -385,19 +385,46 @@
 
                     <!-- Sidebar (Schools) -->
                     <div id="school-sidebar"
-                        class="w-full md:w-2/5 bg-white overflow-y-auto border-r border-gray-200 p-2 space-y-1 custom-scrollbar">
+                        class="w-full md:w-2/5 bg-white overflow-y-auto border-r border-gray-100 p-4 space-y-2 custom-scrollbar">
                         <div data-school="ai"
-                            class="school-tab bg-accurate-blue text-white text-xs md:text-sm font-medium p-3 rounded cursor-pointer transition ">
-                            B.Tech in Computer Science & Engineering</div>
+                            class="school-tab group flex items-center justify-between p-4 rounded-xl cursor-pointer transition-all duration-300 border-l-4 border-accurate-blue bg-blue-50 shadow-sm text-accurate-blue font-bold">
+                            <span class="text-xs md:text-sm tracking-wide leading-relaxed">B.Tech in Computer Science &
+                                Engineering</span>
+                            <svg class="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-1 opacity-100"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
                         <div data-school="cset"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            B.Tech in Computer Science & Engineering (AI & ML)</div>
+                            class="school-tab group flex items-center justify-between p-4 rounded-xl cursor-pointer transition-all duration-300 border-l-4 border-transparent hover:border-gray-200 text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium">
+                            <span class="text-xs md:text-sm tracking-wide leading-relaxed">B.Tech in Computer Science &
+                                Engineering (AI & ML)</span>
+                            <svg class="w-4 h-4 shrink-0 transition-all group-hover:translate-x-1 opacity-0 group-hover:opacity-100"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
                         <div data-school="se"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            B.Tech in Mechanical Engineering</div>
+                            class="school-tab group flex items-center justify-between p-4 rounded-xl cursor-pointer transition-all duration-300 border-l-4 border-transparent hover:border-gray-200 text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium">
+                            <span class="text-xs md:text-sm tracking-wide leading-relaxed">B.Tech in Mechanical
+                                Engineering</span>
+                            <svg class="w-4 h-4 shrink-0 transition-all group-hover:translate-x-1 opacity-0 group-hover:opacity-100"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
                         <div data-school="sm"
-                            class="school-tab text-gray-700 hover:bg-gray-100 text-xs md:text-sm p-3 rounded cursor-pointer transition">
-                            B.Tech in Electronics & Communication Engineering
+                            class="school-tab group flex items-center justify-between p-4 rounded-xl cursor-pointer transition-all duration-300 border-l-4 border-transparent hover:border-gray-200 text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium">
+                            <span class="text-xs md:text-sm tracking-wide leading-relaxed">B.Tech in Electronics &
+                                Communication Engineering</span>
+                            <svg class="w-4 h-4 shrink-0 transition-all group-hover:translate-x-1 opacity-0 group-hover:opacity-100"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
                         </div>
                     </div>
 
@@ -1886,13 +1913,23 @@
             tab.addEventListener('click', function () {
                 // Remove active classes from all tabs
                 sidebarTabs.forEach(t => {
-                    t.classList.remove('bg-accurate-blue', 'text-white');
-                    t.classList.add('text-gray-700', 'hover:bg-gray-100');
+                    t.classList.remove('border-accurate-blue', 'bg-blue-50', 'shadow-sm', 'text-accurate-blue', 'font-bold');
+                    t.classList.add('border-transparent', 'hover:border-gray-200', 'text-gray-600', 'hover:bg-gray-50', 'hover:text-gray-900', 'font-medium');
+                    const svg = t.querySelector('svg');
+                    if (svg) {
+                        svg.classList.remove('opacity-100');
+                        svg.classList.add('opacity-0', 'group-hover:opacity-100');
+                    }
                 });
 
                 // Add active classes to the clicked tab
-                this.classList.remove('text-gray-700', 'hover:bg-gray-100');
-                this.classList.add('bg-accurate-blue', 'text-white');
+                this.classList.remove('border-transparent', 'hover:border-gray-200', 'text-gray-600', 'hover:bg-gray-50', 'hover:text-gray-900', 'font-medium');
+                this.classList.add('border-accurate-blue', 'bg-blue-50', 'shadow-sm', 'text-accurate-blue', 'font-bold');
+                const svg = this.querySelector('svg');
+                if (svg) {
+                    svg.classList.remove('opacity-0', 'group-hover:opacity-100');
+                    svg.classList.add('opacity-100');
+                }
 
                 // Get ID and data
                 const schoolId = this.getAttribute('data-school');
