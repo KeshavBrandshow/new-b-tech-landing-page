@@ -911,7 +911,7 @@
 
                 <!-- Left Student Image Area -->
                 <div
-                    class="w-full md:w-[45%] h-[350px] md:h-[450px] relative z-10 flex items-end justify-center overflow-hidden">
+                    class="w-full md:w-[45%] h-[350px] md:h-[450px] relative z-10 flex items-center justify-center overflow-hidden">
                     <!-- Hand-drawn style decorative swooshes -->
                     <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                         <svg class="w-[100%] h-[100%] text-[#2563eb] opacity-40" viewBox="0 0 200 200" fill="none"
@@ -928,11 +928,14 @@
                             <path d="M150 140 L 160 145" />
                         </svg>
                     </div>
-                    <!-- Student Image (Cutout PNG) -->
-                    <img id="placement-student-image"
-                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=800&q=80"
-                        alt="Student"
-                        class="max-h-full w-full object-cover object-top relative z-20 transition-transform duration-500 hover:scale-105">
+                    <!-- Student Image -->
+                    <div
+                        class="w-50 h-50 md:w-50 md:h-50 rounded-full border-[6px] border-white shadow-xl overflow-hidden flex justify-center items-center relative z-20 bg-white">
+                        <img id="placement-student-image"
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=800&q=80"
+                            alt="Student"
+                            class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+                    </div>
                 </div>
 
                 <!-- Right Text Content Area -->
@@ -963,15 +966,22 @@
                         <!-- Company Logo & Name -->
                         <div class="flex items-center gap-3 ml-2">
                             <div id="placement-logo-container" class="w-10 h-10 flex items-center justify-center">
-                                <svg id="placement-company-logo" viewBox="0 0 24 24" fill="currentColor"
+                                <svg id="placement-company-icon" viewBox="0 0 24 24" fill="currentColor"
                                     class="w-full h-full text-[#113C7B]">
                                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                                 </svg>
                             </div>
-                            <div id="placement-company"
-                                class="text-lg md:text-xl font-extrabold text-[#113C7B] tracking-tight">
-                                ONE IT Solution</div>
+                            <div class="flex flex-col justify-center">
+                                <div id="placement-company"
+                                    class="text-lg md:text-xl font-extrabold text-[#113C7B] tracking-tight mt-1">
+                                    ONE IT Solution</div>
+                           
+                            </div>
                         </div>
+                    </div>
+                    <div>
+                             <img id="placement-company-logo" src="" alt="Company Logo"
+                                    class="h-12 md:h-16 max-w-[150px] md:max-w-[200px] w-auto object-contain object-left hidden mt-2">
                     </div>
                 </div>
             </div>
@@ -1128,69 +1138,59 @@
 
         const placementData = [
             {
-                quote: "\"Lift your career <br class='hidden md:block'>beyond \"",
-                name: "Aman Singh",
-                course: "B.Tech CSE",
-                // ctc: "25.04 LPA",
-                company: "MangosOrange  ",
-                image: "image/placement/aman-singh.webp"
-            },
-            {
-                quote: "\"Exceptional faculty <br class='hidden md:block'>and global exposure\"",
-                name: "Anurag Raghav Sinha",
-                course: "B.Tech CSE",
-                // ctc: "18.00 LPA",
-                company: "MangosOrange ",
-                image: "image/placement/anurag-sinha.webp"
-            },
-            {
                 quote: "\"A transformative <br class='hidden md:block'>learning journey\"",
-                name: "Manish Nagar",
-                course: "B.Tech CSE",
+                name: "Arzoo Bharti",
+                course: "B.Tech",
                 // ctc: "18.00 LPA",
-                company: "MangosOrange",
-                image: "image/placement/manish-nagar.webp"
+                company: "Intellipaat",
+                companyLogo: "image/placement-logo/intellipaat.webp", // Add company logo image path here
+                image: "image/placement/arzoo.webp"
             },
             {
                 quote: "\"Industry-ready <br class='hidden md:block'>from day one\"",
-                name: "Prerna Bharti",
-                course: "B.Tech CSE",
+                name: "Harshit Singhal",
+                course: "B.Tech",
                 // ctc: "18.00 LPA",
-                company: "MangosOrange",
-                image: "image/placement/prerna-bharti.webp"
+                company: "Indus Valley Partners",
+                companyLogo: "image/placement-logo/indus.avif", // Add company logo image path here
+                image: "image/placement/harshit.webp"
             },
             {
                 quote: "\"World-class <br class='hidden md:block'> innovation\"",
-                name: "Priya Dwivedi",
-                course: "B.Tech CSE",
+                name: "Ravi Patel",
+                course: "B.Tech",
                 // ctc: "15.50 LPA",
-                company: "MangosOrange",
-                image: "image/placement/priya-dwivedi.webp"
+                company: "Indus Valley Partners",
+                companyLogo: "image/placement-logo/indus.avif", // Add company logo image path here
+                image: "image/placement/ravi-patel.webp"
             },
             {
                 quote: "\"Unmatched support <br class='hidden md:block'>for startup ideas\"",
-                name: "Suraj Jha",
-                course: "B.Tech CSE",
+                name: "Shivangi Kashyap",
+                course: "B.Tech",
                 // ctc: "12.00 LPA",
-                company: "MangosOrange",
-                image: "image/placement/suraj-jha.webp"
+                company: "Indus Valley Partners",
+                companyLogo: "image/placement-logo/indus.avif", // Add company logo image path here
+                image: "image/placement/shivangi-kashyap.webp"
             },
             {
                 quote: "\"Unmatched support <br class='hidden md:block'>for startup ideas\"",
-                name: "Tejvir Chauhan Rajput",
-                course: "B.Tech CSE",
+                name: "Shubham Yadav",
+                course: "B.Tech",
                 // ctc: "12.00 LPA",
-                company: "MangosOrange",
-                image: "image/placement/tejvir-chauhan-rajput.webp"
+                company: "Indus Valley Partners",
+                companyLogo: "image/placement-logo/indus.avif", // Add company logo image path here
+                image: "image/placement/shubham-yadav.webp"
             },
             {
                 quote: "\"Unmatched support <br class='hidden md:block'>for startup ideas\"",
-                name: "Tushar Sharma",
-                course: "B.Tech CSE",
+                name: "Soniya Braahman",
+                course: "B.Tech",
                 // ctc: "12.00 LPA",
-                company: "MangosOrange",
-                image: "image/placement/tushar-sharma.webp"
-            }
+                company: "TCS",
+                companyLogo: "image/placement-logo/tcs.webp", // Add company logo image path here
+                image: "image/placement/soniya-braahman.webp"
+            },
         ];
 
         let currentPlacementIndex = 0;
@@ -1203,6 +1203,7 @@
         const elCourse = document.getElementById('placement-course');
         // const elCtc = document.getElementById('placement-ctc');
         const elCompany = document.getElementById('placement-company');
+        const elCompanyLogo = document.getElementById('placement-company-logo');
         const elImage = document.getElementById('placement-student-image');
 
         function updatePlacementCarousel(index) {
@@ -1216,6 +1217,13 @@
                 elCourse.textContent = data.course;
                 // elCtc.textContent = data.ctc;
                 elCompany.textContent = data.company;
+
+                if (data.companyLogo) {
+                    elCompanyLogo.src = data.companyLogo;
+                    elCompanyLogo.classList.remove('hidden');
+                } else {
+                    elCompanyLogo.classList.add('hidden');
+                }
 
                 if (data.image) {
                     elImage.src = data.image;
@@ -1260,19 +1268,23 @@
 
         // --- KEY RECRUITERS SLIDER LOGIC ---
         const recruitersData = [
-            'image/placement-logo/Bajaj.webp',
-            'image/placement-logo/capital-boon.webp',
-            'image/placement-logo/credit-q.webp',
-            'image/placement-logo/d-mart.webp',
-            'image/placement-logo/first-point-creations.webp',
-            'image/placement-logo/genpact.webp',
-            'image/placement-logo/hdfc-placement.webp',
-            'image/placement-logo/icici-bank.webp',
-            'image/placement-logo/oppo.webp',
-            'image/placement-logo/smc.webp',
-            'image/placement-logo/suwasthi.webp',
-            'image/placement-logo/tide.webp',
-            'image/placement-logo/wipro.webp'
+            'image/placement-logo/logo.webp',
+            'image/placement-logo/logo-1.webp',
+            'image/placement-logo/logo-2.webp',
+            'image/placement-logo/logo-3.webp',
+            'image/placement-logo/logo-4.webp',
+            'image/placement-logo/logo-5.webp',
+            'image/placement-logo/logo-6.webp',
+            'image/placement-logo/logo-7.webp',
+            'image/placement-logo/logo-8.webp',
+            'image/placement-logo/logo-9.webp',
+            'image/placement-logo/logo-10.webp',
+            'image/placement-logo/logo-11.webp',
+            'image/placement-logo/logo-12.webp',
+            'image/placement-logo/logo-13.webp',
+            'image/placement-logo/logo-14.webp',
+            'image/placement-logo/logo-15.webp',
+
         ];
 
         const recruitersTrack = document.getElementById('recruiters-track');
