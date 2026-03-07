@@ -2161,7 +2161,7 @@
         const sidebarTabs = document.querySelectorAll('.school-tab');
         const programsContent = document.getElementById('programs-content');
 
-        function renderSpecializations(tabElement) {
+        function renderSpecializations(tabElement, skipScroll = false) {
             // Remove active classes from all tabs
             sidebarTabs.forEach(t => {
                 t.classList.remove('border-accurate-blue', 'bg-blue-50', 'shadow-sm', 'text-accurate-blue', 'font-bold');
@@ -2231,9 +2231,11 @@
                     tabElement.parentNode.insertBefore(contentDiv, tabElement.nextSibling);
 
                     // Scroll active tab into view smoothly
-                    setTimeout(() => {
-                        tabElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    }, 50);
+                    if (!skipScroll) {
+                        setTimeout(() => {
+                            tabElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }, 50);
+                    }
                 } else {
                     // Desktop: Show in main pane
                     programsContent.classList.remove('hidden');
@@ -2244,20 +2246,25 @@
 
         sidebarTabs.forEach(tab => {
             tab.addEventListener('click', function () {
-                renderSpecializations(this);
+                renderSpecializations(this, false);
             });
         });
 
         // Initialize first tab
         if (sidebarTabs.length > 0) {
-            renderSpecializations(sidebarTabs[0]);
+            renderSpecializations(sidebarTabs[0], true);
         }
 
-        // Handle Resize to re-render layout properly
+        // Handle Resize to re-render layout properly ONLY when crossing mobile/desktop breakpoint
+        let isMobileLayout = window.innerWidth < 768;
         window.addEventListener('resize', () => {
-            const activeTab = document.querySelector('.school-tab.border-accurate-blue');
-            if (activeTab) {
-                renderSpecializations(activeTab);
+            const currentIsMobile = window.innerWidth < 768;
+            if (isMobileLayout !== currentIsMobile) {
+                isMobileLayout = currentIsMobile;
+                const activeTab = document.querySelector('.school-tab.border-accurate-blue');
+                if (activeTab) {
+                    renderSpecializations(activeTab, true);
+                }
             }
         });
 
